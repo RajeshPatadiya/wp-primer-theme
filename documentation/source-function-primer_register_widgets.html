@@ -14,8 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="resources/css/styles.css?1c0be7d42007b45e49f18eeb0d35db57c73b27a6">
 	<link rel="stylesheet" type="text/css" href="resources/css/responsive.css?23aedcbba2a71c6eae0181247948af42426549eb">
 
-	<script type="text/javascript" src="resources/combined.js?6d96d814cee1a62683b46f9c7acd278de258fe45"></script>
-	<script type="text/javascript" src="elementlist.js?47cc419a1d1bb5f60f81e1f62e9668db5cb44319"></script>
+	<script type="text/javascript" src="resources/combined.js?d7e4aa5f4ea7205f5545c5c647e8746089622f06"></script>
+	<script type="text/javascript" src="elementlist.js?e0970370446f37c6ef0012943afb9fe3c13d4b8f"></script>
 
 
 
@@ -248,6 +248,7 @@
 
 						<h3 class="nav-title">Functions</h3>
 						<ul class="nav-list">
+							<li><a title="is_custom_primer_child" href="function-is_custom_primer_child.html">is_custom_primer_child</a></li>
 							<li><a title="primer_add_credit" href="function-primer_add_credit.html">primer_add_credit</a></li>
 							<li><a title="primer_add_footer_navigation" href="function-primer_add_footer_navigation.html">primer_add_footer_navigation</a></li>
 							<li><a title="primer_add_footer_widgets" href="function-primer_add_footer_widgets.html">primer_add_footer_widgets</a></li>
@@ -320,6 +321,7 @@
 							<li><a title="primer_the_site_title" href="function-primer_the_site_title.html">primer_the_site_title</a></li>
 							<li><a title="primer_upgrade_notice" href="function-primer_upgrade_notice.html">primer_upgrade_notice</a></li>
 							<li><a title="primer_use_featured_hero_image" href="function-primer_use_featured_hero_image.html">primer_use_featured_hero_image</a></li>
+							<li><a title="primer_video_header" href="function-primer_video_header.html">primer_video_header</a></li>
 							<li><a title="primer_wc_404_template" href="function-primer_wc_404_template.html">primer_wc_404_template</a></li>
 							<li><a title="primer_wc_best_selling_products" href="function-primer_wc_best_selling_products.html">primer_wc_best_selling_products</a></li>
 							<li><a title="primer_wc_cart_menu" href="function-primer_wc_cart_menu.html">primer_wc_cart_menu</a></li>
@@ -329,6 +331,7 @@
 							<li><a title="primer_wc_generate_cart_menu_item" href="function-primer_wc_generate_cart_menu_item.html">primer_wc_generate_cart_menu_item</a></li>
 							<li><a title="primer_wc_l10n_body_class" href="function-primer_wc_l10n_body_class.html">primer_wc_l10n_body_class</a></li>
 							<li><a title="primer_wc_product_classes" href="function-primer_wc_product_classes.html">primer_wc_product_classes</a></li>
+							<li><a title="primer_wc_product_header_image" href="function-primer_wc_product_header_image.html">primer_wc_product_header_image</a></li>
 							<li><a title="primer_wc_promoted_products" href="function-primer_wc_promoted_products.html">primer_wc_promoted_products</a></li>
 							<li><a title="primer_wc_setup" href="function-primer_wc_setup.html">primer_wc_setup</a></li>
 							<li><a title="primer_wc_shop_columns" href="function-primer_wc_shop_columns.html">primer_wc_shop_columns</a></li>
@@ -371,7 +374,7 @@
 </span></span><span id="23" class="codeline"><a class="number" href="#23"> 23: </a><span class="php-comment"> *
 </span></span><span id="24" class="codeline"><a class="number" href="#24"> 24: </a><span class="php-comment"> * @var string
 </span></span><span id="25" class="codeline"><a class="number" href="#25"> 25: </a><span class="php-comment"> */</span>
-</span><span id="26" class="codeline"><a class="number" href="#26"> 26: </a><span class="php-keyword2">define</span>( <span class="php-quote">'PRIMER_VERSION'</span>, <span class="php-quote">'1.6.0'</span> );
+</span><span id="26" class="codeline"><a class="number" href="#26"> 26: </a><span class="php-keyword2">define</span>( <span class="php-quote">'PRIMER_VERSION'</span>, <span class="php-quote">'1.7.0'</span> );
 </span><span id="27" class="codeline"><a class="number" href="#27"> 27: </a>
 </span><span id="28" class="codeline"><a class="number" href="#28"> 28: </a><span class="php-comment">/**
 </span></span><span id="29" class="codeline"><a class="number" href="#29"> 29: </a><span class="php-comment"> * Minimum WordPress version required for Primer.
@@ -829,77 +832,79 @@
 </span><span id="481" class="codeline"><a class="number" href="#481">481: </a>
 </span><span id="482" class="codeline"><a class="number" href="#482">482: </a>    wp_style_add_data( <span class="php-var">$stylesheet</span>, <span class="php-quote">'rtl'</span>, <span class="php-quote">'replace'</span> );
 </span><span id="483" class="codeline"><a class="number" href="#483">483: </a>
-</span><span id="484" class="codeline"><a class="number" href="#484">484: </a>    wp_enqueue_script( <span class="php-quote">'primer-navigation'</span>, get_template_directory_uri() . <span class="php-quote">&quot;/assets/js/navigation</span><span class="php-var">{$suffix}</span><span class="php-quote">.js&quot;</span>, <span class="php-keyword1">array</span>( <span class="php-quote">'jquery'</span> ), PRIMER_VERSION, <span class="php-keyword1">true</span> );
-</span><span id="485" class="codeline"><a class="number" href="#485">485: </a>    wp_enqueue_script( <span class="php-quote">'primer-skip-link-focus-fix'</span>, get_template_directory_uri() . <span class="php-quote">&quot;/assets/js/skip-link-focus-fix</span><span class="php-var">{$suffix}</span><span class="php-quote">.js&quot;</span>, <span class="php-keyword1">array</span>(), PRIMER_VERSION, <span class="php-keyword1">true</span> );
-</span><span id="486" class="codeline"><a class="number" href="#486">486: </a>
-</span><span id="487" class="codeline"><a class="number" href="#487">487: </a>    <span class="php-keyword1">if</span> ( is_singular() &amp;&amp; comments_open() &amp;&amp; get_option( <span class="php-quote">'thread_comments'</span> ) ) {
+</span><span id="484" class="codeline"><a class="number" href="#484">484: </a>    <span class="php-var">$nav_dependencies</span> = ( is_front_page() &amp;&amp; has_header_video() ) ? <span class="php-keyword1">array</span>( <span class="php-quote">'jquery'</span>, <span class="php-quote">'wp-custom-header'</span> ) : <span class="php-keyword1">array</span>( <span class="php-quote">'jquery'</span> );
+</span><span id="485" class="codeline"><a class="number" href="#485">485: </a>
+</span><span id="486" class="codeline"><a class="number" href="#486">486: </a>    wp_enqueue_script( <span class="php-quote">'primer-navigation'</span>, get_template_directory_uri() . <span class="php-quote">&quot;/assets/js/navigation</span><span class="php-var">{$suffix}</span><span class="php-quote">.js&quot;</span>, <span class="php-var">$nav_dependencies</span>, PRIMER_VERSION, <span class="php-keyword1">true</span> );
+</span><span id="487" class="codeline"><a class="number" href="#487">487: </a>    wp_enqueue_script( <span class="php-quote">'primer-skip-link-focus-fix'</span>, get_template_directory_uri() . <span class="php-quote">&quot;/assets/js/skip-link-focus-fix</span><span class="php-var">{$suffix}</span><span class="php-quote">.js&quot;</span>, <span class="php-keyword1">array</span>(), PRIMER_VERSION, <span class="php-keyword1">true</span> );
 </span><span id="488" class="codeline"><a class="number" href="#488">488: </a>
-</span><span id="489" class="codeline"><a class="number" href="#489">489: </a>        wp_enqueue_script( <span class="php-quote">'comment-reply'</span> );
+</span><span id="489" class="codeline"><a class="number" href="#489">489: </a>    <span class="php-keyword1">if</span> ( is_singular() &amp;&amp; comments_open() &amp;&amp; get_option( <span class="php-quote">'thread_comments'</span> ) ) {
 </span><span id="490" class="codeline"><a class="number" href="#490">490: </a>
-</span><span id="491" class="codeline"><a class="number" href="#491">491: </a>    }
+</span><span id="491" class="codeline"><a class="number" href="#491">491: </a>        wp_enqueue_script( <span class="php-quote">'comment-reply'</span> );
 </span><span id="492" class="codeline"><a class="number" href="#492">492: </a>
-</span><span id="493" class="codeline"><a class="number" href="#493">493: </a>    <span class="php-keyword1">if</span> ( primer_has_hero_image() ) {
+</span><span id="493" class="codeline"><a class="number" href="#493">493: </a>    }
 </span><span id="494" class="codeline"><a class="number" href="#494">494: </a>
-</span><span id="495" class="codeline"><a class="number" href="#495">495: </a>        <span class="php-var">$css</span> = <span class="php-keyword2">sprintf</span>(
-</span><span id="496" class="codeline"><a class="number" href="#496">496: </a>            SCRIPT_DEBUG ? <span class="php-quote">'%s { background-image: url(%s); }'</span> : <span class="php-quote">'%s{background-image:url(%s);}'</span>,
-</span><span id="497" class="codeline"><a class="number" href="#497">497: </a>            primer_get_hero_image_selector(),
-</span><span id="498" class="codeline"><a class="number" href="#498">498: </a>            esc_url( primer_get_hero_image() )
-</span><span id="499" class="codeline"><a class="number" href="#499">499: </a>        );
-</span><span id="500" class="codeline"><a class="number" href="#500">500: </a>
-</span><span id="501" class="codeline"><a class="number" href="#501">501: </a>        wp_add_inline_style( <span class="php-var">$stylesheet</span>, <span class="php-var">$css</span> );
+</span><span id="495" class="codeline"><a class="number" href="#495">495: </a>    <span class="php-keyword1">if</span> ( primer_has_hero_image() ) {
+</span><span id="496" class="codeline"><a class="number" href="#496">496: </a>
+</span><span id="497" class="codeline"><a class="number" href="#497">497: </a>        <span class="php-var">$css</span> = <span class="php-keyword2">sprintf</span>(
+</span><span id="498" class="codeline"><a class="number" href="#498">498: </a>            SCRIPT_DEBUG ? <span class="php-quote">'%s { background-image: url(%s); }'</span> : <span class="php-quote">'%s{background-image:url(%s);}'</span>,
+</span><span id="499" class="codeline"><a class="number" href="#499">499: </a>            primer_get_hero_image_selector(),
+</span><span id="500" class="codeline"><a class="number" href="#500">500: </a>            esc_url( primer_get_hero_image() )
+</span><span id="501" class="codeline"><a class="number" href="#501">501: </a>        );
 </span><span id="502" class="codeline"><a class="number" href="#502">502: </a>
-</span><span id="503" class="codeline"><a class="number" href="#503">503: </a>    }
+</span><span id="503" class="codeline"><a class="number" href="#503">503: </a>        wp_add_inline_style( <span class="php-var">$stylesheet</span>, <span class="php-var">$css</span> );
 </span><span id="504" class="codeline"><a class="number" href="#504">504: </a>
-</span><span id="505" class="codeline"><a class="number" href="#505">505: </a>}
-</span><span id="506" class="codeline"><a class="number" href="#506">506: </a>add_action( <span class="php-quote">'wp_enqueue_scripts'</span>, <span class="php-quote">'primer_scripts'</span> );
-</span><span id="507" class="codeline"><a class="number" href="#507">507: </a>
-</span><span id="508" class="codeline"><a class="number" href="#508">508: </a><span class="php-comment">/**
-</span></span><span id="509" class="codeline"><a class="number" href="#509">509: </a><span class="php-comment"> * Sets the authordata global when viewing an author archive.
-</span></span><span id="510" class="codeline"><a class="number" href="#510">510: </a><span class="php-comment"> *
-</span></span><span id="511" class="codeline"><a class="number" href="#511">511: </a><span class="php-comment"> * This provides backwards compatibility with
-</span></span><span id="512" class="codeline"><a class="number" href="#512">512: </a><span class="php-comment"> * http://core.trac.wordpress.org/changeset/25574
-</span></span><span id="513" class="codeline"><a class="number" href="#513">513: </a><span class="php-comment"> *
-</span></span><span id="514" class="codeline"><a class="number" href="#514">514: </a><span class="php-comment"> * It removes the need to call `the_post()` and `rewind_posts()`
-</span></span><span id="515" class="codeline"><a class="number" href="#515">515: </a><span class="php-comment"> * in an author template to print information about the author.
-</span></span><span id="516" class="codeline"><a class="number" href="#516">516: </a><span class="php-comment"> *
-</span></span><span id="517" class="codeline"><a class="number" href="#517">517: </a><span class="php-comment"> * @action wp
-</span></span><span id="518" class="codeline"><a class="number" href="#518">518: </a><span class="php-comment"> * @global WP_Query $wp_query
-</span></span><span id="519" class="codeline"><a class="number" href="#519">519: </a><span class="php-comment"> * @global WP_User  $authordata
-</span></span><span id="520" class="codeline"><a class="number" href="#520">520: </a><span class="php-comment"> * @since  1.0.0
-</span></span><span id="521" class="codeline"><a class="number" href="#521">521: </a><span class="php-comment"> */</span>
-</span><span id="522" class="codeline"><a class="number" href="#522">522: </a><span class="php-keyword1">function</span> primer_setup_author() {
-</span><span id="523" class="codeline"><a class="number" href="#523">523: </a>
-</span><span id="524" class="codeline"><a class="number" href="#524">524: </a>    <span class="php-keyword1">global</span> <span class="php-var">$wp_query</span>, <span class="php-var">$authordata</span>;
+</span><span id="505" class="codeline"><a class="number" href="#505">505: </a>    }
+</span><span id="506" class="codeline"><a class="number" href="#506">506: </a>
+</span><span id="507" class="codeline"><a class="number" href="#507">507: </a>}
+</span><span id="508" class="codeline"><a class="number" href="#508">508: </a>add_action( <span class="php-quote">'wp_enqueue_scripts'</span>, <span class="php-quote">'primer_scripts'</span> );
+</span><span id="509" class="codeline"><a class="number" href="#509">509: </a>
+</span><span id="510" class="codeline"><a class="number" href="#510">510: </a><span class="php-comment">/**
+</span></span><span id="511" class="codeline"><a class="number" href="#511">511: </a><span class="php-comment"> * Sets the authordata global when viewing an author archive.
+</span></span><span id="512" class="codeline"><a class="number" href="#512">512: </a><span class="php-comment"> *
+</span></span><span id="513" class="codeline"><a class="number" href="#513">513: </a><span class="php-comment"> * This provides backwards compatibility with
+</span></span><span id="514" class="codeline"><a class="number" href="#514">514: </a><span class="php-comment"> * http://core.trac.wordpress.org/changeset/25574
+</span></span><span id="515" class="codeline"><a class="number" href="#515">515: </a><span class="php-comment"> *
+</span></span><span id="516" class="codeline"><a class="number" href="#516">516: </a><span class="php-comment"> * It removes the need to call `the_post()` and `rewind_posts()`
+</span></span><span id="517" class="codeline"><a class="number" href="#517">517: </a><span class="php-comment"> * in an author template to print information about the author.
+</span></span><span id="518" class="codeline"><a class="number" href="#518">518: </a><span class="php-comment"> *
+</span></span><span id="519" class="codeline"><a class="number" href="#519">519: </a><span class="php-comment"> * @action wp
+</span></span><span id="520" class="codeline"><a class="number" href="#520">520: </a><span class="php-comment"> * @global WP_Query $wp_query
+</span></span><span id="521" class="codeline"><a class="number" href="#521">521: </a><span class="php-comment"> * @global WP_User  $authordata
+</span></span><span id="522" class="codeline"><a class="number" href="#522">522: </a><span class="php-comment"> * @since  1.0.0
+</span></span><span id="523" class="codeline"><a class="number" href="#523">523: </a><span class="php-comment"> */</span>
+</span><span id="524" class="codeline"><a class="number" href="#524">524: </a><span class="php-keyword1">function</span> primer_setup_author() {
 </span><span id="525" class="codeline"><a class="number" href="#525">525: </a>
-</span><span id="526" class="codeline"><a class="number" href="#526">526: </a>    <span class="php-keyword1">if</span> ( <span class="php-var">$wp_query</span>-&gt;is_author() &amp;&amp; <span class="php-keyword1">isset</span>( <span class="php-var">$wp_query</span>-&gt;post ) ) {
+</span><span id="526" class="codeline"><a class="number" href="#526">526: </a>    <span class="php-keyword1">global</span> <span class="php-var">$wp_query</span>, <span class="php-var">$authordata</span>;
 </span><span id="527" class="codeline"><a class="number" href="#527">527: </a>
-</span><span id="528" class="codeline"><a class="number" href="#528">528: </a>        <span class="php-var">$authordata</span> = get_userdata( <span class="php-var">$wp_query</span>-&gt;post-&gt;post_author ); <span class="php-comment">// override ok.</span>
+</span><span id="528" class="codeline"><a class="number" href="#528">528: </a>    <span class="php-keyword1">if</span> ( <span class="php-var">$wp_query</span>-&gt;is_author() &amp;&amp; <span class="php-keyword1">isset</span>( <span class="php-var">$wp_query</span>-&gt;post ) ) {
 </span><span id="529" class="codeline"><a class="number" href="#529">529: </a>
-</span><span id="530" class="codeline"><a class="number" href="#530">530: </a>    }
+</span><span id="530" class="codeline"><a class="number" href="#530">530: </a>        <span class="php-var">$authordata</span> = get_userdata( <span class="php-var">$wp_query</span>-&gt;post-&gt;post_author ); <span class="php-comment">// override ok.</span>
 </span><span id="531" class="codeline"><a class="number" href="#531">531: </a>
-</span><span id="532" class="codeline"><a class="number" href="#532">532: </a>}
-</span><span id="533" class="codeline"><a class="number" href="#533">533: </a>add_action( <span class="php-quote">'wp'</span>, <span class="php-quote">'primer_setup_author'</span> );
-</span><span id="534" class="codeline"><a class="number" href="#534">534: </a>
-</span><span id="535" class="codeline"><a class="number" href="#535">535: </a><span class="php-comment">/**
-</span></span><span id="536" class="codeline"><a class="number" href="#536">536: </a><span class="php-comment"> * Reset the transient for the active categories check.
-</span></span><span id="537" class="codeline"><a class="number" href="#537">537: </a><span class="php-comment"> *
-</span></span><span id="538" class="codeline"><a class="number" href="#538">538: </a><span class="php-comment"> * @action create_category
-</span></span><span id="539" class="codeline"><a class="number" href="#539">539: </a><span class="php-comment"> * @action edit_category
-</span></span><span id="540" class="codeline"><a class="number" href="#540">540: </a><span class="php-comment"> * @action delete_category
-</span></span><span id="541" class="codeline"><a class="number" href="#541">541: </a><span class="php-comment"> * @action save_post
-</span></span><span id="542" class="codeline"><a class="number" href="#542">542: </a><span class="php-comment"> * @see    primer_has_active_categories()
-</span></span><span id="543" class="codeline"><a class="number" href="#543">543: </a><span class="php-comment"> * @since  1.0.0
-</span></span><span id="544" class="codeline"><a class="number" href="#544">544: </a><span class="php-comment"> */</span>
-</span><span id="545" class="codeline"><a class="number" href="#545">545: </a><span class="php-keyword1">function</span> primer_has_active_categories_reset() {
-</span><span id="546" class="codeline"><a class="number" href="#546">546: </a>
-</span><span id="547" class="codeline"><a class="number" href="#547">547: </a>    delete_transient( <span class="php-quote">'primer_has_active_categories'</span> );
+</span><span id="532" class="codeline"><a class="number" href="#532">532: </a>    }
+</span><span id="533" class="codeline"><a class="number" href="#533">533: </a>
+</span><span id="534" class="codeline"><a class="number" href="#534">534: </a>}
+</span><span id="535" class="codeline"><a class="number" href="#535">535: </a>add_action( <span class="php-quote">'wp'</span>, <span class="php-quote">'primer_setup_author'</span> );
+</span><span id="536" class="codeline"><a class="number" href="#536">536: </a>
+</span><span id="537" class="codeline"><a class="number" href="#537">537: </a><span class="php-comment">/**
+</span></span><span id="538" class="codeline"><a class="number" href="#538">538: </a><span class="php-comment"> * Reset the transient for the active categories check.
+</span></span><span id="539" class="codeline"><a class="number" href="#539">539: </a><span class="php-comment"> *
+</span></span><span id="540" class="codeline"><a class="number" href="#540">540: </a><span class="php-comment"> * @action create_category
+</span></span><span id="541" class="codeline"><a class="number" href="#541">541: </a><span class="php-comment"> * @action edit_category
+</span></span><span id="542" class="codeline"><a class="number" href="#542">542: </a><span class="php-comment"> * @action delete_category
+</span></span><span id="543" class="codeline"><a class="number" href="#543">543: </a><span class="php-comment"> * @action save_post
+</span></span><span id="544" class="codeline"><a class="number" href="#544">544: </a><span class="php-comment"> * @see    primer_has_active_categories()
+</span></span><span id="545" class="codeline"><a class="number" href="#545">545: </a><span class="php-comment"> * @since  1.0.0
+</span></span><span id="546" class="codeline"><a class="number" href="#546">546: </a><span class="php-comment"> */</span>
+</span><span id="547" class="codeline"><a class="number" href="#547">547: </a><span class="php-keyword1">function</span> primer_has_active_categories_reset() {
 </span><span id="548" class="codeline"><a class="number" href="#548">548: </a>
-</span><span id="549" class="codeline"><a class="number" href="#549">549: </a>}
-</span><span id="550" class="codeline"><a class="number" href="#550">550: </a>add_action( <span class="php-quote">'create_category'</span>, <span class="php-quote">'primer_has_active_categories_reset'</span> );
-</span><span id="551" class="codeline"><a class="number" href="#551">551: </a>add_action( <span class="php-quote">'edit_category'</span>,   <span class="php-quote">'primer_has_active_categories_reset'</span> );
-</span><span id="552" class="codeline"><a class="number" href="#552">552: </a>add_action( <span class="php-quote">'delete_category'</span>, <span class="php-quote">'primer_has_active_categories_reset'</span> );
-</span><span id="553" class="codeline"><a class="number" href="#553">553: </a>add_action( <span class="php-quote">'save_post'</span>,       <span class="php-quote">'primer_has_active_categories_reset'</span> );
-</span><span id="554" class="codeline"><a class="number" href="#554">554: </a></span></code></pre>
+</span><span id="549" class="codeline"><a class="number" href="#549">549: </a>    delete_transient( <span class="php-quote">'primer_has_active_categories'</span> );
+</span><span id="550" class="codeline"><a class="number" href="#550">550: </a>
+</span><span id="551" class="codeline"><a class="number" href="#551">551: </a>}
+</span><span id="552" class="codeline"><a class="number" href="#552">552: </a>add_action( <span class="php-quote">'create_category'</span>, <span class="php-quote">'primer_has_active_categories_reset'</span> );
+</span><span id="553" class="codeline"><a class="number" href="#553">553: </a>add_action( <span class="php-quote">'edit_category'</span>,   <span class="php-quote">'primer_has_active_categories_reset'</span> );
+</span><span id="554" class="codeline"><a class="number" href="#554">554: </a>add_action( <span class="php-quote">'delete_category'</span>, <span class="php-quote">'primer_has_active_categories_reset'</span> );
+</span><span id="555" class="codeline"><a class="number" href="#555">555: </a>add_action( <span class="php-quote">'save_post'</span>,       <span class="php-quote">'primer_has_active_categories_reset'</span> );
+</span><span id="556" class="codeline"><a class="number" href="#556">556: </a></span></code></pre>
 			</div>
 		</div>
 

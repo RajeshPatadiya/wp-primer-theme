@@ -14,8 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="resources/css/styles.css?1c0be7d42007b45e49f18eeb0d35db57c73b27a6">
 	<link rel="stylesheet" type="text/css" href="resources/css/responsive.css?23aedcbba2a71c6eae0181247948af42426549eb">
 
-	<script type="text/javascript" src="resources/combined.js?6d96d814cee1a62683b46f9c7acd278de258fe45"></script>
-	<script type="text/javascript" src="elementlist.js?47cc419a1d1bb5f60f81e1f62e9668db5cb44319"></script>
+	<script type="text/javascript" src="resources/combined.js?d7e4aa5f4ea7205f5545c5c647e8746089622f06"></script>
+	<script type="text/javascript" src="elementlist.js?e0970370446f37c6ef0012943afb9fe3c13d4b8f"></script>
 
 
 
@@ -248,6 +248,7 @@
 
 						<h3 class="nav-title">Functions</h3>
 						<ul class="nav-list">
+							<li><a title="is_custom_primer_child" href="function-is_custom_primer_child.html">is_custom_primer_child</a></li>
 							<li><a title="primer_add_credit" href="function-primer_add_credit.html">primer_add_credit</a></li>
 							<li><a title="primer_add_footer_navigation" href="function-primer_add_footer_navigation.html">primer_add_footer_navigation</a></li>
 							<li><a title="primer_add_footer_widgets" href="function-primer_add_footer_widgets.html">primer_add_footer_widgets</a></li>
@@ -320,6 +321,7 @@
 							<li><a title="primer_the_site_title" href="function-primer_the_site_title.html">primer_the_site_title</a></li>
 							<li><a title="primer_upgrade_notice" href="function-primer_upgrade_notice.html">primer_upgrade_notice</a></li>
 							<li><a title="primer_use_featured_hero_image" href="function-primer_use_featured_hero_image.html">primer_use_featured_hero_image</a></li>
+							<li><a title="primer_video_header" href="function-primer_video_header.html">primer_video_header</a></li>
 							<li><a title="primer_wc_404_template" href="function-primer_wc_404_template.html">primer_wc_404_template</a></li>
 							<li><a title="primer_wc_best_selling_products" href="function-primer_wc_best_selling_products.html">primer_wc_best_selling_products</a></li>
 							<li><a title="primer_wc_cart_menu" href="function-primer_wc_cart_menu.html">primer_wc_cart_menu</a></li>
@@ -329,6 +331,7 @@
 							<li><a title="primer_wc_generate_cart_menu_item" href="function-primer_wc_generate_cart_menu_item.html">primer_wc_generate_cart_menu_item</a></li>
 							<li><a title="primer_wc_l10n_body_class" href="function-primer_wc_l10n_body_class.html">primer_wc_l10n_body_class</a></li>
 							<li><a title="primer_wc_product_classes" href="function-primer_wc_product_classes.html">primer_wc_product_classes</a></li>
+							<li><a title="primer_wc_product_header_image" href="function-primer_wc_product_header_image.html">primer_wc_product_header_image</a></li>
 							<li><a title="primer_wc_promoted_products" href="function-primer_wc_promoted_products.html">primer_wc_promoted_products</a></li>
 							<li><a title="primer_wc_setup" href="function-primer_wc_setup.html">primer_wc_setup</a></li>
 							<li><a title="primer_wc_shop_columns" href="function-primer_wc_shop_columns.html">primer_wc_shop_columns</a></li>
@@ -462,8 +465,8 @@
 </span><span id="114" class="codeline"><a class="number" href="#114">114: </a>    }
 </span><span id="115" class="codeline"><a class="number" href="#115">115: </a>
 </span><span id="116" class="codeline"><a class="number" href="#116">116: </a>    <span class="php-comment">// Note: Translation text must be a string or the themecheck will flag it.</span>
-</span><span id="117" class="codeline"><a class="number" href="#117">117: </a>    <span class="php-var">$with_alt</span>    = <span class="php-keyword2">function_exists</span>( <span class="php-quote">'_x'</span> ) ? _x( <span class="php-quote">'%1$s is &lt;strong&gt;deprecated&lt;/strong&gt; since %2$s version %3$s! Use %4$s instead.'</span>, <span class="php-quote">'1. PHP function name, 2. theme name, 3. version number, 4. alternative function name'</span>, <span class="php-quote">'primer'</span> ) : <span class="php-quote">'%1$s is &lt;strong&gt;deprecated&lt;/strong&gt; since %2$s version %3$s! Use %4$s instead.'</span>;
-</span><span id="118" class="codeline"><a class="number" href="#118">118: </a>    <span class="php-var">$without_alt</span> = <span class="php-keyword2">function_exists</span>( <span class="php-quote">'_x'</span> ) ? _x( <span class="php-quote">'%1$s is &lt;strong&gt;deprecated&lt;/strong&gt; since %2$s version %3$s with no alternative available.'</span>, <span class="php-quote">'1. PHP function name, 2. theme name, 3. version number'</span>, <span class="php-quote">'primer'</span> ) : <span class="php-quote">'%1$s is &lt;strong&gt;deprecated&lt;/strong&gt; since %2$s version %3$s with no alternative available.'</span>;
+</span><span id="117" class="codeline"><a class="number" href="#117">117: </a>    <span class="php-var">$with_alt</span>    = <span class="php-keyword2">function_exists</span>( <span class="php-quote">'__'</span> ) ? <span class="php-comment">/* translators: 1. PHP function name, 2. theme name, 3. version number, 4. alternative function name */</span> __( <span class="php-quote">'%1$s is &lt;strong&gt;deprecated&lt;/strong&gt; since %2$s version %3$s! Use %4$s instead.'</span>, <span class="php-quote">'primer'</span> ) : <span class="php-quote">'%1$s is &lt;strong&gt;deprecated&lt;/strong&gt; since %2$s version %3$s! Use %4$s instead.'</span>;
+</span><span id="118" class="codeline"><a class="number" href="#118">118: </a>    <span class="php-var">$without_alt</span> = <span class="php-keyword2">function_exists</span>( <span class="php-quote">'__'</span> ) ? <span class="php-comment">/* translators: 1. PHP function name, 2. theme name, 3. version number */</span> __( <span class="php-quote">'%1$s is &lt;strong&gt;deprecated&lt;/strong&gt; since %2$s version %3$s with no alternative available.'</span>, <span class="php-quote">'primer'</span> ) : <span class="php-quote">'%1$s is &lt;strong&gt;deprecated&lt;/strong&gt; since %2$s version %3$s with no alternative available.'</span>;
 </span><span id="119" class="codeline"><a class="number" href="#119">119: </a>
 </span><span id="120" class="codeline"><a class="number" href="#120">120: </a>    <span class="php-var">$string</span>  = ( <span class="php-var">$alt_name</span> ) ? <span class="php-var">$with_alt</span> : <span class="php-var">$without_alt</span>;
 </span><span id="121" class="codeline"><a class="number" href="#121">121: </a>    <span class="php-var">$theme</span>   = ! <span class="php-keyword1">empty</span>( <span class="php-var">$theme</span> ) ? <span class="php-var">$theme</span> : esc_html__( <span class="php-quote">'Primer'</span>, <span class="php-quote">'primer'</span> );

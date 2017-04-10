@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Function primer_deprecated_function | Primer Theme</title>
+	<title>Function primer_video_header | Primer Theme</title>
 
 	<link href="resources/favicon.png?ae6b9b73563f359562b7a4d356903cd68bdaa887" type="image/png" rel="icon">
 	<link href="resources/favicon.png?ae6b9b73563f359562b7a4d356903cd68bdaa887" type="image/png" rel="shortcut icon">
@@ -236,10 +236,27 @@
 
 						<h3 class="nav-title">Functions</h3>
 						<ul class="nav-list">
-							<li><a title="primer_deprecated" href="function-primer_deprecated.html">primer_deprecated</a></li>
-							<li class="active"><a title="primer_deprecated_function" href="function-primer_deprecated_function.html">primer_deprecated_function</a></li>
-							<li><a title="primer_deprecated_hook" href="function-primer_deprecated_hook.html">primer_deprecated_hook</a></li>
-							<li><a title="primer_paging_nav" href="function-primer_paging_nav.html" class="deprecated">primer_paging_nav</a></li>
+							<li><a title="primer_add_credit" href="function-primer_add_credit.html">primer_add_credit</a></li>
+							<li><a title="primer_add_footer_navigation" href="function-primer_add_footer_navigation.html">primer_add_footer_navigation</a></li>
+							<li><a title="primer_add_footer_widgets" href="function-primer_add_footer_widgets.html">primer_add_footer_widgets</a></li>
+							<li><a title="primer_add_hero" href="function-primer_add_hero.html">primer_add_hero</a></li>
+							<li><a title="primer_add_hero_content" href="function-primer_add_hero_content.html">primer_add_hero_content</a></li>
+							<li><a title="primer_add_mobile_menu" href="function-primer_add_mobile_menu.html">primer_add_mobile_menu</a></li>
+							<li><a title="primer_add_page_title" href="function-primer_add_page_title.html">primer_add_page_title</a></li>
+							<li><a title="primer_add_post_meta" href="function-primer_add_post_meta.html">primer_add_post_meta</a></li>
+							<li><a title="primer_add_primary_menu" href="function-primer_add_primary_menu.html">primer_add_primary_menu</a></li>
+							<li><a title="primer_add_primary_navigation" href="function-primer_add_primary_navigation.html">primer_add_primary_navigation</a></li>
+							<li><a title="primer_add_site_info" href="function-primer_add_site_info.html">primer_add_site_info</a></li>
+							<li><a title="primer_add_site_title" href="function-primer_add_site_title.html">primer_add_site_title</a></li>
+							<li><a title="primer_add_social_navigation" href="function-primer_add_social_navigation.html">primer_add_social_navigation</a></li>
+							<li><a title="primer_body_class" href="function-primer_body_class.html">primer_body_class</a></li>
+							<li><a title="primer_conditional_jquery_tag" href="function-primer_conditional_jquery_tag.html">primer_conditional_jquery_tag</a></li>
+							<li><a title="primer_elements" href="function-primer_elements.html">primer_elements</a></li>
+							<li><a title="primer_excerpt_length" href="function-primer_excerpt_length.html">primer_excerpt_length</a></li>
+							<li><a title="primer_excerpt_more" href="function-primer_excerpt_more.html">primer_excerpt_more</a></li>
+							<li><a title="primer_pagination_template" href="function-primer_pagination_template.html">primer_pagination_template</a></li>
+							<li class="active"><a title="primer_video_header" href="function-primer_video_header.html">primer_video_header</a></li>
+							<li><a title="primer_wp_title" href="function-primer_wp_title.html">primer_wp_title</a></li>
 						</ul>
 					</div>
 				</div>
@@ -247,63 +264,30 @@
 
 						<div id="right" class="col-md-9">
 <div id="content" class="function">
-	<h1>Function primer_deprecated_function</h1>
+	<h1>Function primer_video_header</h1>
 
 
 	<div class="description">
-	<p>Mark a function as deprecated.</p>
-
-<p>This function is to be used in every Primer function that is deprecated.</p>
-
-<p>Note: This function's access is marked private. This means it is not
-intended to be used by plugin or theme developers, and should only be
-used by other Primer functions. This function could be changed or even
-removed in the future without concern for backward compatiblity and is
-only documented here for completeness.</p>
+	<p>Display video header</p>
 	</div>
 
 	<div class="info">
 		
-		<b>Package:</b> <a href="package-Deprecated.html">Deprecated</a><br>
+		<b>Package:</b> <a href="package-Hooks.html">Hooks</a><br>
 				<b>Author:</b>
 				GoDaddy<br>
 				<b>Since:</b>
-				1.6.0<br>
-				<b>Link:</b>
-				<a href="https://developer.wordpress.org/reference/functions/_deprecated_function/">https://developer.wordpress.org/reference/functions/_deprecated_function/</a><br>
-		<b>Located at</b> <a href="source-function-primer_deprecated_function.html#11-47" title="Go to source code">inc/compat/deprecated.php</a><br>
+				1.7.0<br>
+				<b>Action:</b>
+				primer_before_header_wrapper<br>
+		<b>Located at</b> <a href="source-function-primer_video_header.html#34-50" title="Go to source code">inc/hooks.php</a><br>
 	</div>
 
 	<p class="method-signature">
-primer_deprecated_function( string <var>$name</var> string <var>$version</var> string <var>$alt_name</var> <span class="php-keyword1">null</span> string <var>$theme</var> <span class="php-keyword1">null</span> )
+primer_video_header( )
 	</p>
 
 
-	<div class="section">
-		<h3>Parameters summary</h3>
-		<table class="summary">
-		<tr id="$name">
-			<td class="name"><code>string</code></td>
-			<td class="value"><code><var>$name</var></code></td>
-			<td>The function that was called.</td>
-		</tr>
-		<tr id="$version">
-			<td class="name"><code>string</code></td>
-			<td class="value"><code><var>$version</var></code></td>
-			<td>The theme version that deprecated the function.</td>
-		</tr>
-		<tr id="$alt_name">
-			<td class="name"><code>string</code></td>
-			<td class="value"><code><var>$alt_name</var> = <span class="php-keyword1">null</span></code></td>
-			<td>(optional) The function that should be called instead. Default is <code>null</code>.</td>
-		</tr>
-		<tr id="$theme">
-			<td class="name"><code>string</code></td>
-			<td class="value"><code><var>$theme</var> = <span class="php-keyword1">null</span></code></td>
-			<td>(optional) The theme that deprecated the function. Default is <code>null</code> which defaults to 'Primer'.</td>
-		</tr>
-		</table>
-	</div>
 
 
 

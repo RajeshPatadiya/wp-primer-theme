@@ -14,8 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="resources/css/styles.css?1c0be7d42007b45e49f18eeb0d35db57c73b27a6">
 	<link rel="stylesheet" type="text/css" href="resources/css/responsive.css?23aedcbba2a71c6eae0181247948af42426549eb">
 
-	<script type="text/javascript" src="resources/combined.js?6d96d814cee1a62683b46f9c7acd278de258fe45"></script>
-	<script type="text/javascript" src="elementlist.js?47cc419a1d1bb5f60f81e1f62e9668db5cb44319"></script>
+	<script type="text/javascript" src="resources/combined.js?d7e4aa5f4ea7205f5545c5c647e8746089622f06"></script>
+	<script type="text/javascript" src="elementlist.js?e0970370446f37c6ef0012943afb9fe3c13d4b8f"></script>
 
 
 
@@ -248,6 +248,7 @@
 
 						<h3 class="nav-title">Functions</h3>
 						<ul class="nav-list">
+							<li><a title="is_custom_primer_child" href="function-is_custom_primer_child.html">is_custom_primer_child</a></li>
 							<li><a title="primer_add_credit" href="function-primer_add_credit.html">primer_add_credit</a></li>
 							<li><a title="primer_add_footer_navigation" href="function-primer_add_footer_navigation.html">primer_add_footer_navigation</a></li>
 							<li><a title="primer_add_footer_widgets" href="function-primer_add_footer_widgets.html">primer_add_footer_widgets</a></li>
@@ -320,6 +321,7 @@
 							<li><a title="primer_the_site_title" href="function-primer_the_site_title.html">primer_the_site_title</a></li>
 							<li><a title="primer_upgrade_notice" href="function-primer_upgrade_notice.html">primer_upgrade_notice</a></li>
 							<li><a title="primer_use_featured_hero_image" href="function-primer_use_featured_hero_image.html">primer_use_featured_hero_image</a></li>
+							<li><a title="primer_video_header" href="function-primer_video_header.html">primer_video_header</a></li>
 							<li><a title="primer_wc_404_template" href="function-primer_wc_404_template.html">primer_wc_404_template</a></li>
 							<li><a title="primer_wc_best_selling_products" href="function-primer_wc_best_selling_products.html">primer_wc_best_selling_products</a></li>
 							<li><a title="primer_wc_cart_menu" href="function-primer_wc_cart_menu.html">primer_wc_cart_menu</a></li>
@@ -329,6 +331,7 @@
 							<li><a title="primer_wc_generate_cart_menu_item" href="function-primer_wc_generate_cart_menu_item.html">primer_wc_generate_cart_menu_item</a></li>
 							<li><a title="primer_wc_l10n_body_class" href="function-primer_wc_l10n_body_class.html">primer_wc_l10n_body_class</a></li>
 							<li><a title="primer_wc_product_classes" href="function-primer_wc_product_classes.html">primer_wc_product_classes</a></li>
+							<li><a title="primer_wc_product_header_image" href="function-primer_wc_product_header_image.html">primer_wc_product_header_image</a></li>
 							<li><a title="primer_wc_promoted_products" href="function-primer_wc_promoted_products.html">primer_wc_promoted_products</a></li>
 							<li><a title="primer_wc_setup" href="function-primer_wc_setup.html">primer_wc_setup</a></li>
 							<li><a title="primer_wc_shop_columns" href="function-primer_wc_shop_columns.html">primer_wc_shop_columns</a></li>
@@ -416,50 +419,51 @@
 </span><span id="68" class="codeline"><a class="number" href="#68"> 68: </a>                <span class="php-quote">'sanitize_callback'</span>    =&gt; <span class="php-quote">'wp_kses_post'</span>,
 </span><span id="69" class="codeline"><a class="number" href="#69"> 69: </a>                <span class="php-quote">'sanitize_js_callback'</span> =&gt; <span class="php-quote">'wp_kses_post'</span>,
 </span><span id="70" class="codeline"><a class="number" href="#70"> 70: </a>                <span class="php-quote">'default'</span>              =&gt; <span class="php-keyword2">sprintf</span>(
-</span><span id="71" class="codeline"><a class="number" href="#71"> 71: </a>                    esc_html_x( <span class="php-quote">'Copyright %1$s %2$d %3$s'</span>, <span class="php-quote">'1. copyright symbol, 2. year, 3. site title'</span>, <span class="php-quote">'primer'</span> ),
-</span><span id="72" class="codeline"><a class="number" href="#72"> 72: </a>                    <span class="php-quote">'&amp;copy;'</span>,
-</span><span id="73" class="codeline"><a class="number" href="#73"> 73: </a>                    <span class="php-keyword2">date</span>( <span class="php-quote">'Y'</span> ),
-</span><span id="74" class="codeline"><a class="number" href="#74"> 74: </a>                    get_bloginfo( <span class="php-quote">'blogname'</span> )
-</span><span id="75" class="codeline"><a class="number" href="#75"> 75: </a>                ),
-</span><span id="76" class="codeline"><a class="number" href="#76"> 76: </a>            )
-</span><span id="77" class="codeline"><a class="number" href="#77"> 77: </a>        );
-</span><span id="78" class="codeline"><a class="number" href="#78"> 78: </a>
-</span><span id="79" class="codeline"><a class="number" href="#79"> 79: </a>        <span class="php-var">$wp_customize</span>-&gt;add_control(
-</span><span id="80" class="codeline"><a class="number" href="#80"> 80: </a>            <span class="php-quote">'copyright_text'</span>,
-</span><span id="81" class="codeline"><a class="number" href="#81"> 81: </a>            <span class="php-keyword1">array</span>(
-</span><span id="82" class="codeline"><a class="number" href="#82"> 82: </a>                <span class="php-quote">'label'</span>    =&gt; esc_html__( <span class="php-quote">'Footer Copyright Text'</span>, <span class="php-quote">'primer'</span> ),
-</span><span id="83" class="codeline"><a class="number" href="#83"> 83: </a>                <span class="php-quote">'section'</span>  =&gt; <span class="php-quote">'title_tagline'</span>,
-</span><span id="84" class="codeline"><a class="number" href="#84"> 84: </a>                <span class="php-quote">'settings'</span> =&gt; <span class="php-quote">'copyright_text'</span>,
-</span><span id="85" class="codeline"><a class="number" href="#85"> 85: </a>                <span class="php-quote">'type'</span>     =&gt; <span class="php-quote">'text'</span>,
-</span><span id="86" class="codeline"><a class="number" href="#86"> 86: </a>                <span class="php-quote">'priority'</span> =&gt; <span class="php-num">40</span>,
-</span><span id="87" class="codeline"><a class="number" href="#87"> 87: </a>            )
-</span><span id="88" class="codeline"><a class="number" href="#88"> 88: </a>        );
-</span><span id="89" class="codeline"><a class="number" href="#89"> 89: </a>
-</span><span id="90" class="codeline"><a class="number" href="#90"> 90: </a>        <span class="php-var">$wp_customize</span>-&gt;add_setting(
-</span><span id="91" class="codeline"><a class="number" href="#91"> 91: </a>            <span class="php-quote">'show_author_credit'</span>,
-</span><span id="92" class="codeline"><a class="number" href="#92"> 92: </a>            <span class="php-keyword1">array</span>(
-</span><span id="93" class="codeline"><a class="number" href="#93"> 93: </a>                <span class="php-quote">'default'</span>           =&gt; <span class="php-num">1</span>,
-</span><span id="94" class="codeline"><a class="number" href="#94"> 94: </a>                <span class="php-quote">'sanitize_callback'</span> =&gt; <span class="php-quote">'absint'</span>,
-</span><span id="95" class="codeline"><a class="number" href="#95"> 95: </a>            )
-</span><span id="96" class="codeline"><a class="number" href="#96"> 96: </a>        );
-</span><span id="97" class="codeline"><a class="number" href="#97"> 97: </a>
-</span><span id="98" class="codeline"><a class="number" href="#98"> 98: </a>        <span class="php-var">$wp_customize</span>-&gt;add_control(
-</span><span id="99" class="codeline"><a class="number" href="#99"> 99: </a>            <span class="php-quote">'show_author_credit'</span>,
-</span><span id="100" class="codeline"><a class="number" href="#100">100: </a>            <span class="php-keyword1">array</span>(
-</span><span id="101" class="codeline"><a class="number" href="#101">101: </a>                <span class="php-quote">'label'</span>    =&gt; esc_html__( <span class="php-quote">'Display theme author credit'</span>, <span class="php-quote">'primer'</span> ),
-</span><span id="102" class="codeline"><a class="number" href="#102">102: </a>                <span class="php-quote">'section'</span>  =&gt; <span class="php-quote">'title_tagline'</span>,
-</span><span id="103" class="codeline"><a class="number" href="#103">103: </a>                <span class="php-quote">'settings'</span> =&gt; <span class="php-quote">'show_author_credit'</span>,
-</span><span id="104" class="codeline"><a class="number" href="#104">104: </a>                <span class="php-quote">'type'</span>     =&gt; <span class="php-quote">'checkbox'</span>,
-</span><span id="105" class="codeline"><a class="number" href="#105">105: </a>                <span class="php-quote">'priority'</span> =&gt; <span class="php-num">50</span>,
-</span><span id="106" class="codeline"><a class="number" href="#106">106: </a>            )
-</span><span id="107" class="codeline"><a class="number" href="#107">107: </a>        );
-</span><span id="108" class="codeline"><a class="number" href="#108">108: </a>
-</span><span id="109" class="codeline"><a class="number" href="#109">109: </a>    }
-</span><span id="110" class="codeline"><a class="number" href="#110">110: </a>
-</span><span id="111" class="codeline"><a class="number" href="#111">111: </a>}
-</span><span id="112" class="codeline"><a class="number" href="#112">112: </a>
-</span><span id="113" class="codeline"><a class="number" href="#113">113: </a><span class="php-var">$GLOBALS</span>[<span class="php-quote">'primer_site_identity_options'</span>] = <span class="php-keyword1">new</span> Primer_Site_Identity_Options;
-</span><span id="114" class="codeline"><a class="number" href="#114">114: </a></span></code></pre>
+</span><span id="71" class="codeline"><a class="number" href="#71"> 71: </a>                    <span class="php-comment">/* translators: 1. copyright symbol, 2. year, 3. site title */</span>
+</span><span id="72" class="codeline"><a class="number" href="#72"> 72: </a>                    esc_html__( <span class="php-quote">'Copyright %1$s %2$d %3$s'</span>, <span class="php-quote">'primer'</span> ),
+</span><span id="73" class="codeline"><a class="number" href="#73"> 73: </a>                    <span class="php-quote">'&amp;copy;'</span>,
+</span><span id="74" class="codeline"><a class="number" href="#74"> 74: </a>                    <span class="php-keyword2">date</span>( <span class="php-quote">'Y'</span> ),
+</span><span id="75" class="codeline"><a class="number" href="#75"> 75: </a>                    get_bloginfo( <span class="php-quote">'blogname'</span> )
+</span><span id="76" class="codeline"><a class="number" href="#76"> 76: </a>                ),
+</span><span id="77" class="codeline"><a class="number" href="#77"> 77: </a>            )
+</span><span id="78" class="codeline"><a class="number" href="#78"> 78: </a>        );
+</span><span id="79" class="codeline"><a class="number" href="#79"> 79: </a>
+</span><span id="80" class="codeline"><a class="number" href="#80"> 80: </a>        <span class="php-var">$wp_customize</span>-&gt;add_control(
+</span><span id="81" class="codeline"><a class="number" href="#81"> 81: </a>            <span class="php-quote">'copyright_text'</span>,
+</span><span id="82" class="codeline"><a class="number" href="#82"> 82: </a>            <span class="php-keyword1">array</span>(
+</span><span id="83" class="codeline"><a class="number" href="#83"> 83: </a>                <span class="php-quote">'label'</span>    =&gt; esc_html__( <span class="php-quote">'Footer Copyright Text'</span>, <span class="php-quote">'primer'</span> ),
+</span><span id="84" class="codeline"><a class="number" href="#84"> 84: </a>                <span class="php-quote">'section'</span>  =&gt; <span class="php-quote">'title_tagline'</span>,
+</span><span id="85" class="codeline"><a class="number" href="#85"> 85: </a>                <span class="php-quote">'settings'</span> =&gt; <span class="php-quote">'copyright_text'</span>,
+</span><span id="86" class="codeline"><a class="number" href="#86"> 86: </a>                <span class="php-quote">'type'</span>     =&gt; <span class="php-quote">'text'</span>,
+</span><span id="87" class="codeline"><a class="number" href="#87"> 87: </a>                <span class="php-quote">'priority'</span> =&gt; <span class="php-num">40</span>,
+</span><span id="88" class="codeline"><a class="number" href="#88"> 88: </a>            )
+</span><span id="89" class="codeline"><a class="number" href="#89"> 89: </a>        );
+</span><span id="90" class="codeline"><a class="number" href="#90"> 90: </a>
+</span><span id="91" class="codeline"><a class="number" href="#91"> 91: </a>        <span class="php-var">$wp_customize</span>-&gt;add_setting(
+</span><span id="92" class="codeline"><a class="number" href="#92"> 92: </a>            <span class="php-quote">'show_author_credit'</span>,
+</span><span id="93" class="codeline"><a class="number" href="#93"> 93: </a>            <span class="php-keyword1">array</span>(
+</span><span id="94" class="codeline"><a class="number" href="#94"> 94: </a>                <span class="php-quote">'default'</span>           =&gt; <span class="php-num">1</span>,
+</span><span id="95" class="codeline"><a class="number" href="#95"> 95: </a>                <span class="php-quote">'sanitize_callback'</span> =&gt; <span class="php-quote">'absint'</span>,
+</span><span id="96" class="codeline"><a class="number" href="#96"> 96: </a>            )
+</span><span id="97" class="codeline"><a class="number" href="#97"> 97: </a>        );
+</span><span id="98" class="codeline"><a class="number" href="#98"> 98: </a>
+</span><span id="99" class="codeline"><a class="number" href="#99"> 99: </a>        <span class="php-var">$wp_customize</span>-&gt;add_control(
+</span><span id="100" class="codeline"><a class="number" href="#100">100: </a>            <span class="php-quote">'show_author_credit'</span>,
+</span><span id="101" class="codeline"><a class="number" href="#101">101: </a>            <span class="php-keyword1">array</span>(
+</span><span id="102" class="codeline"><a class="number" href="#102">102: </a>                <span class="php-quote">'label'</span>    =&gt; esc_html__( <span class="php-quote">'Display theme author credit'</span>, <span class="php-quote">'primer'</span> ),
+</span><span id="103" class="codeline"><a class="number" href="#103">103: </a>                <span class="php-quote">'section'</span>  =&gt; <span class="php-quote">'title_tagline'</span>,
+</span><span id="104" class="codeline"><a class="number" href="#104">104: </a>                <span class="php-quote">'settings'</span> =&gt; <span class="php-quote">'show_author_credit'</span>,
+</span><span id="105" class="codeline"><a class="number" href="#105">105: </a>                <span class="php-quote">'type'</span>     =&gt; <span class="php-quote">'checkbox'</span>,
+</span><span id="106" class="codeline"><a class="number" href="#106">106: </a>                <span class="php-quote">'priority'</span> =&gt; <span class="php-num">50</span>,
+</span><span id="107" class="codeline"><a class="number" href="#107">107: </a>            )
+</span><span id="108" class="codeline"><a class="number" href="#108">108: </a>        );
+</span><span id="109" class="codeline"><a class="number" href="#109">109: </a>
+</span><span id="110" class="codeline"><a class="number" href="#110">110: </a>    }
+</span><span id="111" class="codeline"><a class="number" href="#111">111: </a>
+</span><span id="112" class="codeline"><a class="number" href="#112">112: </a>}
+</span><span id="113" class="codeline"><a class="number" href="#113">113: </a>
+</span><span id="114" class="codeline"><a class="number" href="#114">114: </a><span class="php-var">$GLOBALS</span>[<span class="php-quote">'primer_site_identity_options'</span>] = <span class="php-keyword1">new</span> Primer_Site_Identity_Options;
+</span><span id="115" class="codeline"><a class="number" href="#115">115: </a></span></code></pre>
 			</div>
 		</div>
 

@@ -14,8 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="resources/css/styles.css?1c0be7d42007b45e49f18eeb0d35db57c73b27a6">
 	<link rel="stylesheet" type="text/css" href="resources/css/responsive.css?23aedcbba2a71c6eae0181247948af42426549eb">
 
-	<script type="text/javascript" src="resources/combined.js?6d96d814cee1a62683b46f9c7acd278de258fe45"></script>
-	<script type="text/javascript" src="elementlist.js?47cc419a1d1bb5f60f81e1f62e9668db5cb44319"></script>
+	<script type="text/javascript" src="resources/combined.js?d7e4aa5f4ea7205f5545c5c647e8746089622f06"></script>
+	<script type="text/javascript" src="elementlist.js?e0970370446f37c6ef0012943afb9fe3c13d4b8f"></script>
 
 
 
@@ -248,6 +248,7 @@
 
 						<h3 class="nav-title">Functions</h3>
 						<ul class="nav-list">
+							<li><a title="is_custom_primer_child" href="function-is_custom_primer_child.html">is_custom_primer_child</a></li>
 							<li><a title="primer_add_credit" href="function-primer_add_credit.html">primer_add_credit</a></li>
 							<li><a title="primer_add_footer_navigation" href="function-primer_add_footer_navigation.html">primer_add_footer_navigation</a></li>
 							<li><a title="primer_add_footer_widgets" href="function-primer_add_footer_widgets.html">primer_add_footer_widgets</a></li>
@@ -320,6 +321,7 @@
 							<li><a title="primer_the_site_title" href="function-primer_the_site_title.html">primer_the_site_title</a></li>
 							<li><a title="primer_upgrade_notice" href="function-primer_upgrade_notice.html">primer_upgrade_notice</a></li>
 							<li><a title="primer_use_featured_hero_image" href="function-primer_use_featured_hero_image.html">primer_use_featured_hero_image</a></li>
+							<li><a title="primer_video_header" href="function-primer_video_header.html">primer_video_header</a></li>
 							<li><a title="primer_wc_404_template" href="function-primer_wc_404_template.html">primer_wc_404_template</a></li>
 							<li><a title="primer_wc_best_selling_products" href="function-primer_wc_best_selling_products.html">primer_wc_best_selling_products</a></li>
 							<li><a title="primer_wc_cart_menu" href="function-primer_wc_cart_menu.html">primer_wc_cart_menu</a></li>
@@ -329,6 +331,7 @@
 							<li><a title="primer_wc_generate_cart_menu_item" href="function-primer_wc_generate_cart_menu_item.html">primer_wc_generate_cart_menu_item</a></li>
 							<li><a title="primer_wc_l10n_body_class" href="function-primer_wc_l10n_body_class.html">primer_wc_l10n_body_class</a></li>
 							<li><a title="primer_wc_product_classes" href="function-primer_wc_product_classes.html">primer_wc_product_classes</a></li>
+							<li><a title="primer_wc_product_header_image" href="function-primer_wc_product_header_image.html">primer_wc_product_header_image</a></li>
 							<li><a title="primer_wc_promoted_products" href="function-primer_wc_promoted_products.html">primer_wc_promoted_products</a></li>
 							<li><a title="primer_wc_setup" href="function-primer_wc_setup.html">primer_wc_setup</a></li>
 							<li><a title="primer_wc_shop_columns" href="function-primer_wc_shop_columns.html">primer_wc_shop_columns</a></li>
@@ -827,47 +830,47 @@
 </span><span id="479" class="codeline"><a class="number" href="#479"> 479: </a>
 </span><span id="480" class="codeline"><a class="number" href="#480"> 480: </a>        <span class="php-var">$color_schemes</span> = <span class="php-keyword1">array</span>(
 </span><span id="481" class="codeline"><a class="number" href="#481"> 481: </a>            <span class="php-quote">'blush'</span> =&gt; <span class="php-keyword1">array</span>(
-</span><span id="482" class="codeline"><a class="number" href="#482"> 482: </a>                <span class="php-quote">'label'</span> =&gt; esc_html_x( <span class="php-quote">'Blush'</span>, <span class="php-quote">'color scheme name'</span>, <span class="php-quote">'primer'</span> ),
+</span><span id="482" class="codeline"><a class="number" href="#482"> 482: </a>                <span class="php-quote">'label'</span> =&gt; <span class="php-comment">/* translators: color scheme name */</span> esc_html__( <span class="php-quote">'Blush'</span>, <span class="php-quote">'primer'</span> ),
 </span><span id="483" class="codeline"><a class="number" href="#483"> 483: </a>                <span class="php-quote">'base'</span>  =&gt; <span class="php-quote">'#cc494f'</span>,
 </span><span id="484" class="codeline"><a class="number" href="#484"> 484: </a>            ),
 </span><span id="485" class="codeline"><a class="number" href="#485"> 485: </a>            <span class="php-quote">'bronze'</span> =&gt; <span class="php-keyword1">array</span>(
-</span><span id="486" class="codeline"><a class="number" href="#486"> 486: </a>                <span class="php-quote">'label'</span> =&gt; esc_html_x( <span class="php-quote">'Bronze'</span>, <span class="php-quote">'color scheme name'</span>, <span class="php-quote">'primer'</span> ),
+</span><span id="486" class="codeline"><a class="number" href="#486"> 486: </a>                <span class="php-quote">'label'</span> =&gt; <span class="php-comment">/* translators: color scheme name */</span> esc_html__( <span class="php-quote">'Bronze'</span>, <span class="php-quote">'primer'</span> ),
 </span><span id="487" class="codeline"><a class="number" href="#487"> 487: </a>                <span class="php-quote">'base'</span>  =&gt; <span class="php-quote">'#b1a18b'</span>,
 </span><span id="488" class="codeline"><a class="number" href="#488"> 488: </a>            ),
 </span><span id="489" class="codeline"><a class="number" href="#489"> 489: </a>            <span class="php-quote">'canary'</span> =&gt; <span class="php-keyword1">array</span>(
-</span><span id="490" class="codeline"><a class="number" href="#490"> 490: </a>                <span class="php-quote">'label'</span> =&gt; esc_html_x( <span class="php-quote">'Canary'</span>, <span class="php-quote">'color scheme name'</span>, <span class="php-quote">'primer'</span> ),
+</span><span id="490" class="codeline"><a class="number" href="#490"> 490: </a>                <span class="php-quote">'label'</span> =&gt; <span class="php-comment">/* translators: color scheme name */</span> esc_html__( <span class="php-quote">'Canary'</span>, <span class="php-quote">'primer'</span> ),
 </span><span id="491" class="codeline"><a class="number" href="#491"> 491: </a>                <span class="php-quote">'base'</span>  =&gt; <span class="php-quote">'#e9c46a'</span>,
 </span><span id="492" class="codeline"><a class="number" href="#492"> 492: </a>            ),
 </span><span id="493" class="codeline"><a class="number" href="#493"> 493: </a>            <span class="php-quote">'cool'</span> =&gt; <span class="php-keyword1">array</span>(
-</span><span id="494" class="codeline"><a class="number" href="#494"> 494: </a>                <span class="php-quote">'label'</span> =&gt; esc_html_x( <span class="php-quote">'Cool'</span>, <span class="php-quote">'color scheme name'</span>, <span class="php-quote">'primer'</span> ),
+</span><span id="494" class="codeline"><a class="number" href="#494"> 494: </a>                <span class="php-quote">'label'</span> =&gt; <span class="php-comment">/* translators: color scheme name */</span> esc_html__( <span class="php-quote">'Cool'</span>, <span class="php-quote">'primer'</span> ),
 </span><span id="495" class="codeline"><a class="number" href="#495"> 495: </a>                <span class="php-quote">'base'</span>  =&gt; <span class="php-quote">'#78c3fb'</span>,
 </span><span id="496" class="codeline"><a class="number" href="#496"> 496: </a>            ),
 </span><span id="497" class="codeline"><a class="number" href="#497"> 497: </a>            <span class="php-quote">'dark'</span> =&gt; <span class="php-keyword1">array</span>(
-</span><span id="498" class="codeline"><a class="number" href="#498"> 498: </a>                <span class="php-quote">'label'</span> =&gt; esc_html_x( <span class="php-quote">'Dark'</span>, <span class="php-quote">'color scheme name'</span>, <span class="php-quote">'primer'</span> ),
+</span><span id="498" class="codeline"><a class="number" href="#498"> 498: </a>                <span class="php-quote">'label'</span> =&gt; <span class="php-comment">/* translators: color scheme name */</span> esc_html__( <span class="php-quote">'Dark'</span>, <span class="php-quote">'primer'</span> ),
 </span><span id="499" class="codeline"><a class="number" href="#499"> 499: </a>                <span class="php-quote">'base'</span>  =&gt; <span class="php-quote">'#222222'</span>,
 </span><span id="500" class="codeline"><a class="number" href="#500"> 500: </a>            ),
 </span><span id="501" class="codeline"><a class="number" href="#501"> 501: </a>            <span class="php-quote">'iguana'</span> =&gt; <span class="php-keyword1">array</span>(
-</span><span id="502" class="codeline"><a class="number" href="#502"> 502: </a>                <span class="php-quote">'label'</span> =&gt; esc_html_x( <span class="php-quote">'Iguana'</span>, <span class="php-quote">'color scheme name'</span>, <span class="php-quote">'primer'</span> ),
+</span><span id="502" class="codeline"><a class="number" href="#502"> 502: </a>                <span class="php-quote">'label'</span> =&gt; <span class="php-comment">/* translators: color scheme name */</span> esc_html__( <span class="php-quote">'Iguana'</span>, <span class="php-quote">'primer'</span> ),
 </span><span id="503" class="codeline"><a class="number" href="#503"> 503: </a>                <span class="php-quote">'base'</span>  =&gt; <span class="php-quote">'#62bf7c'</span>,
 </span><span id="504" class="codeline"><a class="number" href="#504"> 504: </a>            ),
 </span><span id="505" class="codeline"><a class="number" href="#505"> 505: </a>            <span class="php-quote">'muted'</span> =&gt; <span class="php-keyword1">array</span>(
-</span><span id="506" class="codeline"><a class="number" href="#506"> 506: </a>                <span class="php-quote">'label'</span> =&gt; esc_html_x( <span class="php-quote">'Muted'</span>, <span class="php-quote">'color scheme name'</span>, <span class="php-quote">'primer'</span> ),
+</span><span id="506" class="codeline"><a class="number" href="#506"> 506: </a>                <span class="php-quote">'label'</span> =&gt; <span class="php-comment">/* translators: color scheme name */</span> esc_html__( <span class="php-quote">'Muted'</span>, <span class="php-quote">'primer'</span> ),
 </span><span id="507" class="codeline"><a class="number" href="#507"> 507: </a>                <span class="php-quote">'base'</span>  =&gt; <span class="php-quote">'#3e4c75'</span>,
 </span><span id="508" class="codeline"><a class="number" href="#508"> 508: </a>            ),
 </span><span id="509" class="codeline"><a class="number" href="#509"> 509: </a>            <span class="php-quote">'plum'</span> =&gt; <span class="php-keyword1">array</span>(
-</span><span id="510" class="codeline"><a class="number" href="#510"> 510: </a>                <span class="php-quote">'label'</span> =&gt; esc_html_x( <span class="php-quote">'Plum'</span>, <span class="php-quote">'color scheme name'</span>, <span class="php-quote">'primer'</span> ),
+</span><span id="510" class="codeline"><a class="number" href="#510"> 510: </a>                <span class="php-quote">'label'</span> =&gt; <span class="php-comment">/* translators: color scheme name */</span> esc_html__( <span class="php-quote">'Plum'</span>, <span class="php-quote">'primer'</span> ),
 </span><span id="511" class="codeline"><a class="number" href="#511"> 511: </a>                <span class="php-quote">'base'</span>  =&gt; <span class="php-quote">'#5d5179'</span>,
 </span><span id="512" class="codeline"><a class="number" href="#512"> 512: </a>            ),
 </span><span id="513" class="codeline"><a class="number" href="#513"> 513: </a>            <span class="php-quote">'rose'</span> =&gt; <span class="php-keyword1">array</span>(
-</span><span id="514" class="codeline"><a class="number" href="#514"> 514: </a>                <span class="php-quote">'label'</span> =&gt; esc_html_x( <span class="php-quote">'Rose'</span>, <span class="php-quote">'color scheme name'</span>, <span class="php-quote">'primer'</span> ),
+</span><span id="514" class="codeline"><a class="number" href="#514"> 514: </a>                <span class="php-quote">'label'</span> =&gt; <span class="php-comment">/* translators: color scheme name */</span> esc_html__( <span class="php-quote">'Rose'</span>, <span class="php-quote">'primer'</span> ),
 </span><span id="515" class="codeline"><a class="number" href="#515"> 515: </a>                <span class="php-quote">'base'</span>  =&gt; <span class="php-quote">'#f49390'</span>,
 </span><span id="516" class="codeline"><a class="number" href="#516"> 516: </a>            ),
 </span><span id="517" class="codeline"><a class="number" href="#517"> 517: </a>            <span class="php-quote">'tangerine'</span> =&gt; <span class="php-keyword1">array</span>(
-</span><span id="518" class="codeline"><a class="number" href="#518"> 518: </a>                <span class="php-quote">'label'</span> =&gt; esc_html_x( <span class="php-quote">'Tangerine'</span>, <span class="php-quote">'color scheme name'</span>, <span class="php-quote">'primer'</span> ),
+</span><span id="518" class="codeline"><a class="number" href="#518"> 518: </a>                <span class="php-quote">'label'</span> =&gt; <span class="php-comment">/* translators: color scheme name */</span> esc_html__( <span class="php-quote">'Tangerine'</span>, <span class="php-quote">'primer'</span> ),
 </span><span id="519" class="codeline"><a class="number" href="#519"> 519: </a>                <span class="php-quote">'base'</span>  =&gt; <span class="php-quote">'#fc9e4f'</span>,
 </span><span id="520" class="codeline"><a class="number" href="#520"> 520: </a>            ),
 </span><span id="521" class="codeline"><a class="number" href="#521"> 521: </a>            <span class="php-quote">'turquoise'</span> =&gt; <span class="php-keyword1">array</span>(
-</span><span id="522" class="codeline"><a class="number" href="#522"> 522: </a>                <span class="php-quote">'label'</span> =&gt; esc_html_x( <span class="php-quote">'Turquoise'</span>, <span class="php-quote">'color scheme name'</span>, <span class="php-quote">'primer'</span> ),
+</span><span id="522" class="codeline"><a class="number" href="#522"> 522: </a>                <span class="php-quote">'label'</span> =&gt; <span class="php-comment">/* translators: color scheme name */</span> esc_html__( <span class="php-quote">'Turquoise'</span>, <span class="php-quote">'primer'</span> ),
 </span><span id="523" class="codeline"><a class="number" href="#523"> 523: </a>                <span class="php-quote">'base'</span>  =&gt; <span class="php-quote">'#48e5c2'</span>,
 </span><span id="524" class="codeline"><a class="number" href="#524"> 524: </a>            ),
 </span><span id="525" class="codeline"><a class="number" href="#525"> 525: </a>        );
@@ -881,7 +884,7 @@
 </span><span id="533" class="codeline"><a class="number" href="#533"> 533: </a>
 </span><span id="534" class="codeline"><a class="number" href="#534"> 534: </a>        }
 </span><span id="535" class="codeline"><a class="number" href="#535"> 535: </a>
-</span><span id="536" class="codeline"><a class="number" href="#536"> 536: </a>        <span class="php-keyword1">if</span> ( ! is_child_theme() ) {
+</span><span id="536" class="codeline"><a class="number" href="#536"> 536: </a>        <span class="php-keyword1">if</span> ( is_custom_primer_child() ) {
 </span><span id="537" class="codeline"><a class="number" href="#537"> 537: </a>
 </span><span id="538" class="codeline"><a class="number" href="#538"> 538: </a>            <span class="php-var">$overrides</span> = <span class="php-keyword1">array</span>(
 </span><span id="539" class="codeline"><a class="number" href="#539"> 539: </a>                <span class="php-quote">'blush'</span> =&gt; <span class="php-keyword1">array</span>(
@@ -1509,209 +1512,210 @@
 </span><span id="1161" class="codeline"><a class="number" href="#1161">1161: </a>                <span class="php-quote">'height'</span>             =&gt; <span class="php-num">1300</span>,
 </span><span id="1162" class="codeline"><a class="number" href="#1162">1162: </a>                <span class="php-quote">'flex-height'</span>        =&gt; <span class="php-keyword1">true</span>,
 </span><span id="1163" class="codeline"><a class="number" href="#1163">1163: </a>                <span class="php-quote">'wp-head-callback'</span>   =&gt; <span class="php-keyword1">array</span>( <span class="php-var">$this</span>, <span class="php-quote">'header_css'</span> ),
-</span><span id="1164" class="codeline"><a class="number" href="#1164">1164: </a>            )
-</span><span id="1165" class="codeline"><a class="number" href="#1165">1165: </a>        );
-</span><span id="1166" class="codeline"><a class="number" href="#1166">1166: </a>
-</span><span id="1167" class="codeline"><a class="number" href="#1167">1167: </a>        add_theme_support( <span class="php-quote">'custom-header'</span>, <span class="php-var">$args</span> );
-</span><span id="1168" class="codeline"><a class="number" href="#1168">1168: </a>
-</span><span id="1169" class="codeline"><a class="number" href="#1169">1169: </a>        <span class="php-comment">/**
-</span></span><span id="1170" class="codeline"><a class="number" href="#1170">1170: </a><span class="php-comment">         * Filter the default hero images.
-</span></span><span id="1171" class="codeline"><a class="number" href="#1171">1171: </a><span class="php-comment">         *
-</span></span><span id="1172" class="codeline"><a class="number" href="#1172">1172: </a><span class="php-comment">         * @var array
-</span></span><span id="1173" class="codeline"><a class="number" href="#1173">1173: </a><span class="php-comment">         */</span>
-</span><span id="1174" class="codeline"><a class="number" href="#1174">1174: </a>        <span class="php-var">$defaults</span> = (<span class="php-keyword1">array</span>) apply_filters( <span class="php-quote">'primer_default_hero_images'</span>,
-</span><span id="1175" class="codeline"><a class="number" href="#1175">1175: </a>            <span class="php-keyword1">array</span>(
-</span><span id="1176" class="codeline"><a class="number" href="#1176">1176: </a>                <span class="php-quote">'default'</span> =&gt; <span class="php-keyword1">array</span>(
-</span><span id="1177" class="codeline"><a class="number" href="#1177">1177: </a>                    <span class="php-quote">'url'</span>           =&gt; <span class="php-quote">'assets/images/hero.jpg'</span>,
-</span><span id="1178" class="codeline"><a class="number" href="#1178">1178: </a>                    <span class="php-quote">'thumbnail_url'</span> =&gt; <span class="php-quote">'assets/images/hero-thumbnail.jpg'</span>,
-</span><span id="1179" class="codeline"><a class="number" href="#1179">1179: </a>                ),
-</span><span id="1180" class="codeline"><a class="number" href="#1180">1180: </a>            )
-</span><span id="1181" class="codeline"><a class="number" href="#1181">1181: </a>        );
-</span><span id="1182" class="codeline"><a class="number" href="#1182">1182: </a>
-</span><span id="1183" class="codeline"><a class="number" href="#1183">1183: </a>        <span class="php-keyword1">foreach</span> ( <span class="php-var">$defaults</span> <span class="php-keyword1">as</span> <span class="php-var">$name</span> =&gt; &amp;<span class="php-var">$args</span> ) {
-</span><span id="1184" class="codeline"><a class="number" href="#1184">1184: </a>
-</span><span id="1185" class="codeline"><a class="number" href="#1185">1185: </a>            <span class="php-var">$path</span> = trailingslashit( get_stylesheet_directory() );
-</span><span id="1186" class="codeline"><a class="number" href="#1186">1186: </a>            <span class="php-var">$url</span>  = trailingslashit( get_stylesheet_directory_uri() );
-</span><span id="1187" class="codeline"><a class="number" href="#1187">1187: </a>
-</span><span id="1188" class="codeline"><a class="number" href="#1188">1188: </a>            <span class="php-keyword1">if</span> ( ! <span class="php-keyword2">file_exists</span>( <span class="php-var">$path</span> . <span class="php-var">$args</span>[<span class="php-quote">'url'</span>] ) ) {
-</span><span id="1189" class="codeline"><a class="number" href="#1189">1189: </a>
-</span><span id="1190" class="codeline"><a class="number" href="#1190">1190: </a>                <span class="php-keyword1">unset</span>( <span class="php-var">$defaults</span>[ <span class="php-var">$name</span> ] );
-</span><span id="1191" class="codeline"><a class="number" href="#1191">1191: </a>
-</span><span id="1192" class="codeline"><a class="number" href="#1192">1192: </a>                <span class="php-keyword1">continue</span>;
-</span><span id="1193" class="codeline"><a class="number" href="#1193">1193: </a>
-</span><span id="1194" class="codeline"><a class="number" href="#1194">1194: </a>            }
-</span><span id="1195" class="codeline"><a class="number" href="#1195">1195: </a>
-</span><span id="1196" class="codeline"><a class="number" href="#1196">1196: </a>            <span class="php-var">$args</span>[<span class="php-quote">'url'</span>]           = <span class="php-var">$url</span> . <span class="php-var">$args</span>[<span class="php-quote">'url'</span>];
-</span><span id="1197" class="codeline"><a class="number" href="#1197">1197: </a>            <span class="php-var">$args</span>[<span class="php-quote">'thumbnail_url'</span>] = <span class="php-keyword2">file_exists</span>( <span class="php-var">$path</span> . <span class="php-var">$args</span>[<span class="php-quote">'thumbnail_url'</span>] ) ? <span class="php-var">$url</span> . <span class="php-var">$args</span>[<span class="php-quote">'thumbnail_url'</span>] : <span class="php-var">$args</span>[<span class="php-quote">'url'</span>];
-</span><span id="1198" class="codeline"><a class="number" href="#1198">1198: </a>
-</span><span id="1199" class="codeline"><a class="number" href="#1199">1199: </a>        }
-</span><span id="1200" class="codeline"><a class="number" href="#1200">1200: </a>
-</span><span id="1201" class="codeline"><a class="number" href="#1201">1201: </a>        <span class="php-keyword1">if</span> ( <span class="php-var">$defaults</span> ) {
-</span><span id="1202" class="codeline"><a class="number" href="#1202">1202: </a>
-</span><span id="1203" class="codeline"><a class="number" href="#1203">1203: </a>            register_default_headers( <span class="php-var">$defaults</span> );
-</span><span id="1204" class="codeline"><a class="number" href="#1204">1204: </a>
-</span><span id="1205" class="codeline"><a class="number" href="#1205">1205: </a>        }
-</span><span id="1206" class="codeline"><a class="number" href="#1206">1206: </a>
-</span><span id="1207" class="codeline"><a class="number" href="#1207">1207: </a>    }
-</span><span id="1208" class="codeline"><a class="number" href="#1208">1208: </a>
-</span><span id="1209" class="codeline"><a class="number" href="#1209">1209: </a>    <span class="php-comment">/**
-</span></span><span id="1210" class="codeline"><a class="number" href="#1210">1210: </a><span class="php-comment">     * Custom header CSS.
-</span></span><span id="1211" class="codeline"><a class="number" href="#1211">1211: </a><span class="php-comment">     *
-</span></span><span id="1212" class="codeline"><a class="number" href="#1212">1212: </a><span class="php-comment">     * @see   $this-&gt;header()
-</span></span><span id="1213" class="codeline"><a class="number" href="#1213">1213: </a><span class="php-comment">     * @since 1.0.0
-</span></span><span id="1214" class="codeline"><a class="number" href="#1214">1214: </a><span class="php-comment">     */</span>
-</span><span id="1215" class="codeline"><a class="number" href="#1215">1215: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> header_css() {
-</span><span id="1216" class="codeline"><a class="number" href="#1216">1216: </a>
-</span><span id="1217" class="codeline"><a class="number" href="#1217">1217: </a>        <span class="php-var">$color</span> = get_header_textcolor();
-</span><span id="1218" class="codeline"><a class="number" href="#1218">1218: </a>        <span class="php-var">$css</span>   = <span class="php-var">$this</span>-&gt;get_color_css( <span class="php-quote">'header_textcolor'</span> );
-</span><span id="1219" class="codeline"><a class="number" href="#1219">1219: </a>
-</span><span id="1220" class="codeline"><a class="number" href="#1220">1220: </a>        <span class="php-keyword1">if</span> ( <span class="php-quote">'blank'</span> === <span class="php-var">$color</span> ) {
-</span><span id="1221" class="codeline"><a class="number" href="#1221">1221: </a>
-</span><span id="1222" class="codeline"><a class="number" href="#1222">1222: </a>            <span class="php-var">$css</span> = <span class="php-keyword1">array</span>(
-</span><span id="1223" class="codeline"><a class="number" href="#1223">1223: </a>                <span class="php-quote">'.site-title, .site-description'</span> =&gt; <span class="php-keyword1">array</span>(
-</span><span id="1224" class="codeline"><a class="number" href="#1224">1224: </a>                    <span class="php-quote">'position'</span> =&gt; <span class="php-quote">'absolute'</span>,
-</span><span id="1225" class="codeline"><a class="number" href="#1225">1225: </a>                    <span class="php-quote">'clip'</span>     =&gt; <span class="php-quote">'rect(1px, 1px, 1px, 1px)'</span>,
-</span><span id="1226" class="codeline"><a class="number" href="#1226">1226: </a>                ),
-</span><span id="1227" class="codeline"><a class="number" href="#1227">1227: </a>            );
-</span><span id="1228" class="codeline"><a class="number" href="#1228">1228: </a>
-</span><span id="1229" class="codeline"><a class="number" href="#1229">1229: </a>        }
-</span><span id="1230" class="codeline"><a class="number" href="#1230">1230: </a>
-</span><span id="1231" class="codeline"><a class="number" href="#1231">1231: </a>        <span class="php-keyword1">if</span> ( <span class="php-var">$color</span> &amp;&amp; <span class="php-var">$css</span> ) {
-</span><span id="1232" class="codeline"><a class="number" href="#1232">1232: </a>
-</span><span id="1233" class="codeline"><a class="number" href="#1233">1233: </a>            <span class="php-keyword2">printf</span>( <span class="php-comment">// xss ok.</span>
-</span><span id="1234" class="codeline"><a class="number" href="#1234">1234: </a>                <span class="php-quote">&quot;&lt;style type='text/css'&gt;\n%s\n&lt;/style&gt;&quot;</span>,
-</span><span id="1235" class="codeline"><a class="number" href="#1235">1235: </a>                <span class="php-keyword2">sprintf</span>( Primer_Customizer::parse_css_rules( <span class="php-var">$css</span> ), <span class="php-var">$color</span> )
-</span><span id="1236" class="codeline"><a class="number" href="#1236">1236: </a>            );
-</span><span id="1237" class="codeline"><a class="number" href="#1237">1237: </a>
-</span><span id="1238" class="codeline"><a class="number" href="#1238">1238: </a>        }
-</span><span id="1239" class="codeline"><a class="number" href="#1239">1239: </a>
-</span><span id="1240" class="codeline"><a class="number" href="#1240">1240: </a>    }
-</span><span id="1241" class="codeline"><a class="number" href="#1241">1241: </a>
-</span><span id="1242" class="codeline"><a class="number" href="#1242">1242: </a>    <span class="php-comment">/**
-</span></span><span id="1243" class="codeline"><a class="number" href="#1243">1243: </a><span class="php-comment">     * Add custom background support.
-</span></span><span id="1244" class="codeline"><a class="number" href="#1244">1244: </a><span class="php-comment">     *
-</span></span><span id="1245" class="codeline"><a class="number" href="#1245">1245: </a><span class="php-comment">     * @action after_setup_theme
-</span></span><span id="1246" class="codeline"><a class="number" href="#1246">1246: </a><span class="php-comment">     * @since  1.0.0
-</span></span><span id="1247" class="codeline"><a class="number" href="#1247">1247: </a><span class="php-comment">     */</span>
-</span><span id="1248" class="codeline"><a class="number" href="#1248">1248: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> background() {
-</span><span id="1249" class="codeline"><a class="number" href="#1249">1249: </a>
-</span><span id="1250" class="codeline"><a class="number" href="#1250">1250: </a>        <span class="php-comment">/**
-</span></span><span id="1251" class="codeline"><a class="number" href="#1251">1251: </a><span class="php-comment">         * Filter the custom background args.
-</span></span><span id="1252" class="codeline"><a class="number" href="#1252">1252: </a><span class="php-comment">         *
-</span></span><span id="1253" class="codeline"><a class="number" href="#1253">1253: </a><span class="php-comment">         * @since 1.0.0
-</span></span><span id="1254" class="codeline"><a class="number" href="#1254">1254: </a><span class="php-comment">         *
-</span></span><span id="1255" class="codeline"><a class="number" href="#1255">1255: </a><span class="php-comment">         * @var array
-</span></span><span id="1256" class="codeline"><a class="number" href="#1256">1256: </a><span class="php-comment">         */</span>
-</span><span id="1257" class="codeline"><a class="number" href="#1257">1257: </a>        <span class="php-var">$args</span> = (<span class="php-keyword1">array</span>) apply_filters( <span class="php-quote">'primer_custom_background_args'</span>,
-</span><span id="1258" class="codeline"><a class="number" href="#1258">1258: </a>            <span class="php-keyword1">array</span>(
-</span><span id="1259" class="codeline"><a class="number" href="#1259">1259: </a>                <span class="php-quote">'default-color'</span> =&gt; <span class="php-var">$this</span>-&gt;get_default_color( <span class="php-quote">'background_color'</span>, <span class="php-quote">'default'</span> ),
-</span><span id="1260" class="codeline"><a class="number" href="#1260">1260: </a>            )
-</span><span id="1261" class="codeline"><a class="number" href="#1261">1261: </a>        );
-</span><span id="1262" class="codeline"><a class="number" href="#1262">1262: </a>
-</span><span id="1263" class="codeline"><a class="number" href="#1263">1263: </a>        add_theme_support( <span class="php-quote">'custom-background'</span>, <span class="php-var">$args</span> );
-</span><span id="1264" class="codeline"><a class="number" href="#1264">1264: </a>
-</span><span id="1265" class="codeline"><a class="number" href="#1265">1265: </a>    }
-</span><span id="1266" class="codeline"><a class="number" href="#1266">1266: </a>
-</span><span id="1267" class="codeline"><a class="number" href="#1267">1267: </a>    <span class="php-comment">/**
-</span></span><span id="1268" class="codeline"><a class="number" href="#1268">1268: </a><span class="php-comment">     * Add setting and control for the hero image color overlay transparency.
-</span></span><span id="1269" class="codeline"><a class="number" href="#1269">1269: </a><span class="php-comment">     *
-</span></span><span id="1270" class="codeline"><a class="number" href="#1270">1270: </a><span class="php-comment">     * @action customize_register
-</span></span><span id="1271" class="codeline"><a class="number" href="#1271">1271: </a><span class="php-comment">     * @see    WP_Customize_Manager
-</span></span><span id="1272" class="codeline"><a class="number" href="#1272">1272: </a><span class="php-comment">     *
-</span></span><span id="1273" class="codeline"><a class="number" href="#1273">1273: </a><span class="php-comment">     * @since  1.0.0
-</span></span><span id="1274" class="codeline"><a class="number" href="#1274">1274: </a><span class="php-comment">     *
-</span></span><span id="1275" class="codeline"><a class="number" href="#1275">1275: </a><span class="php-comment">     * @param WP_Customize_Manager $wp_customize Instance of the WP_Customize_Manager class.
-</span></span><span id="1276" class="codeline"><a class="number" href="#1276">1276: </a><span class="php-comment">     */</span>
-</span><span id="1277" class="codeline"><a class="number" href="#1277">1277: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> color_overlay_transparency( WP_Customize_Manager <span class="php-var">$wp_customize</span> ) {
-</span><span id="1278" class="codeline"><a class="number" href="#1278">1278: </a>
-</span><span id="1279" class="codeline"><a class="number" href="#1279">1279: </a>        <span class="php-var">$wp_customize</span>-&gt;add_setting(
-</span><span id="1280" class="codeline"><a class="number" href="#1280">1280: </a>            <span class="php-quote">'hero_image_color_overlay'</span>,
-</span><span id="1281" class="codeline"><a class="number" href="#1281">1281: </a>            <span class="php-keyword1">array</span>(
-</span><span id="1282" class="codeline"><a class="number" href="#1282">1282: </a>                <span class="php-quote">'default'</span>           =&gt; <span class="php-var">$this</span>-&gt;get_color_overlay_transparency_default_value(),
-</span><span id="1283" class="codeline"><a class="number" href="#1283">1283: </a>                <span class="php-quote">'sanitize_callback'</span> =&gt; <span class="php-quote">'absint'</span>,
-</span><span id="1284" class="codeline"><a class="number" href="#1284">1284: </a>                <span class="php-quote">'transport'</span>         =&gt; <span class="php-quote">'postMessage'</span>,
-</span><span id="1285" class="codeline"><a class="number" href="#1285">1285: </a>            )
-</span><span id="1286" class="codeline"><a class="number" href="#1286">1286: </a>        );
-</span><span id="1287" class="codeline"><a class="number" href="#1287">1287: </a>
-</span><span id="1288" class="codeline"><a class="number" href="#1288">1288: </a>        <span class="php-var">$wp_customize</span>-&gt;add_control(
-</span><span id="1289" class="codeline"><a class="number" href="#1289">1289: </a>            <span class="php-quote">'hero_image_color_overlay'</span>,
-</span><span id="1290" class="codeline"><a class="number" href="#1290">1290: </a>            <span class="php-keyword1">array</span>(
-</span><span id="1291" class="codeline"><a class="number" href="#1291">1291: </a>                <span class="php-quote">'label'</span>           =&gt; esc_html__( <span class="php-quote">'Hero Background Overlay'</span>, <span class="php-quote">'primer'</span> ),
-</span><span id="1292" class="codeline"><a class="number" href="#1292">1292: </a>                <span class="php-quote">'description'</span>     =&gt; esc_html__( <span class="php-quote">'Control the color overlay transparency when using a custom Header Image.'</span>, <span class="php-quote">'primer'</span> ),
-</span><span id="1293" class="codeline"><a class="number" href="#1293">1293: </a>                <span class="php-quote">'section'</span>         =&gt; <span class="php-quote">'colors-header'</span>,
-</span><span id="1294" class="codeline"><a class="number" href="#1294">1294: </a>                <span class="php-quote">'priority'</span>        =&gt; <span class="php-num">20</span>,
-</span><span id="1295" class="codeline"><a class="number" href="#1295">1295: </a>                <span class="php-quote">'active_callback'</span> =&gt; <span class="php-quote">'primer_has_hero_image'</span>,
-</span><span id="1296" class="codeline"><a class="number" href="#1296">1296: </a>                <span class="php-quote">'type'</span>            =&gt; <span class="php-quote">'range'</span>,
-</span><span id="1297" class="codeline"><a class="number" href="#1297">1297: </a>                <span class="php-quote">'input_attrs'</span>     =&gt; <span class="php-keyword1">array</span>(
-</span><span id="1298" class="codeline"><a class="number" href="#1298">1298: </a>                    <span class="php-quote">'min'</span>  =&gt; <span class="php-num">0</span>,
-</span><span id="1299" class="codeline"><a class="number" href="#1299">1299: </a>                    <span class="php-quote">'max'</span>  =&gt; <span class="php-num">100</span>,
-</span><span id="1300" class="codeline"><a class="number" href="#1300">1300: </a>                    <span class="php-quote">'step'</span> =&gt; <span class="php-num">1</span>,
-</span><span id="1301" class="codeline"><a class="number" href="#1301">1301: </a>                ),
-</span><span id="1302" class="codeline"><a class="number" href="#1302">1302: </a>            )
-</span><span id="1303" class="codeline"><a class="number" href="#1303">1303: </a>        );
-</span><span id="1304" class="codeline"><a class="number" href="#1304">1304: </a>
-</span><span id="1305" class="codeline"><a class="number" href="#1305">1305: </a>    }
-</span><span id="1306" class="codeline"><a class="number" href="#1306">1306: </a>
-</span><span id="1307" class="codeline"><a class="number" href="#1307">1307: </a>    <span class="php-comment">/**
-</span></span><span id="1308" class="codeline"><a class="number" href="#1308">1308: </a><span class="php-comment">     * Return the default hero image color overlay transparency value.
-</span></span><span id="1309" class="codeline"><a class="number" href="#1309">1309: </a><span class="php-comment">     *
-</span></span><span id="1310" class="codeline"><a class="number" href="#1310">1310: </a><span class="php-comment">     * @since 1.0.0
-</span></span><span id="1311" class="codeline"><a class="number" href="#1311">1311: </a><span class="php-comment">     *
-</span></span><span id="1312" class="codeline"><a class="number" href="#1312">1312: </a><span class="php-comment">     * @return int Returns the color overlay transparency value.
-</span></span><span id="1313" class="codeline"><a class="number" href="#1313">1313: </a><span class="php-comment">     */</span>
-</span><span id="1314" class="codeline"><a class="number" href="#1314">1314: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> get_color_overlay_transparency_default_value() {
-</span><span id="1315" class="codeline"><a class="number" href="#1315">1315: </a>
-</span><span id="1316" class="codeline"><a class="number" href="#1316">1316: </a>        <span class="php-comment">/**
-</span></span><span id="1317" class="codeline"><a class="number" href="#1317">1317: </a><span class="php-comment">         * Filter the default hero image color overlay transparency value.
-</span></span><span id="1318" class="codeline"><a class="number" href="#1318">1318: </a><span class="php-comment">         *
-</span></span><span id="1319" class="codeline"><a class="number" href="#1319">1319: </a><span class="php-comment">         * @since 1.0.0
-</span></span><span id="1320" class="codeline"><a class="number" href="#1320">1320: </a><span class="php-comment">         *
-</span></span><span id="1321" class="codeline"><a class="number" href="#1321">1321: </a><span class="php-comment">         * @var int
-</span></span><span id="1322" class="codeline"><a class="number" href="#1322">1322: </a><span class="php-comment">         */</span>
-</span><span id="1323" class="codeline"><a class="number" href="#1323">1323: </a>        <span class="php-keyword1">return</span> (int) apply_filters( <span class="php-quote">'primer_hero_image_color_overlay_default'</span>, <span class="php-num">50</span> );
-</span><span id="1324" class="codeline"><a class="number" href="#1324">1324: </a>
-</span><span id="1325" class="codeline"><a class="number" href="#1325">1325: </a>    }
-</span><span id="1326" class="codeline"><a class="number" href="#1326">1326: </a>
-</span><span id="1327" class="codeline"><a class="number" href="#1327">1327: </a>    <span class="php-comment">/**
-</span></span><span id="1328" class="codeline"><a class="number" href="#1328">1328: </a><span class="php-comment">     * Return the hero image color overlay transparency value.
-</span></span><span id="1329" class="codeline"><a class="number" href="#1329">1329: </a><span class="php-comment">     *
-</span></span><span id="1330" class="codeline"><a class="number" href="#1330">1330: </a><span class="php-comment">     * @since 1.0.0
-</span></span><span id="1331" class="codeline"><a class="number" href="#1331">1331: </a><span class="php-comment">     *
-</span></span><span id="1332" class="codeline"><a class="number" href="#1332">1332: </a><span class="php-comment">     * @return string Returns the hero color overlay transparency value.
-</span></span><span id="1333" class="codeline"><a class="number" href="#1333">1333: </a><span class="php-comment">     */</span>
-</span><span id="1334" class="codeline"><a class="number" href="#1334">1334: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> get_color_overlay_transparency_value() {
-</span><span id="1335" class="codeline"><a class="number" href="#1335">1335: </a>
-</span><span id="1336" class="codeline"><a class="number" href="#1336">1336: </a>        <span class="php-var">$default</span> = <span class="php-var">$this</span>-&gt;get_color_overlay_transparency_default_value();
-</span><span id="1337" class="codeline"><a class="number" href="#1337">1337: </a>
-</span><span id="1338" class="codeline"><a class="number" href="#1338">1338: </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">sprintf</span>( <span class="php-quote">'%.2f'</span>, absint( get_theme_mod( <span class="php-quote">'hero_image_color_overlay'</span>, <span class="php-var">$default</span> ) ) * <span class="php-num">0.01</span> );
-</span><span id="1339" class="codeline"><a class="number" href="#1339">1339: </a>
-</span><span id="1340" class="codeline"><a class="number" href="#1340">1340: </a>    }
-</span><span id="1341" class="codeline"><a class="number" href="#1341">1341: </a>
-</span><span id="1342" class="codeline"><a class="number" href="#1342">1342: </a>    <span class="php-comment">/**
-</span></span><span id="1343" class="codeline"><a class="number" href="#1343">1343: </a><span class="php-comment">     * Magic getter for `$colors` and `$color_schemes` properties.
-</span></span><span id="1344" class="codeline"><a class="number" href="#1344">1344: </a><span class="php-comment">     *
-</span></span><span id="1345" class="codeline"><a class="number" href="#1345">1345: </a><span class="php-comment">     * @since  1.0.0
-</span></span><span id="1346" class="codeline"><a class="number" href="#1346">1346: </a><span class="php-comment">     *
-</span></span><span id="1347" class="codeline"><a class="number" href="#1347">1347: </a><span class="php-comment">     * @param  string $name Color key or color scheme slug name.
-</span></span><span id="1348" class="codeline"><a class="number" href="#1348">1348: </a><span class="php-comment">     *
-</span></span><span id="1349" class="codeline"><a class="number" href="#1349">1349: </a><span class="php-comment">     * @return string Return the specified property within the `Primer_Customizer_Colors` class.
-</span></span><span id="1350" class="codeline"><a class="number" href="#1350">1350: </a><span class="php-comment">     */</span>
-</span><span id="1351" class="codeline"><a class="number" href="#1351">1351: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __get( <span class="php-var">$name</span> ) {
-</span><span id="1352" class="codeline"><a class="number" href="#1352">1352: </a>
-</span><span id="1353" class="codeline"><a class="number" href="#1353">1353: </a>        <span class="php-keyword1">if</span> ( ! <span class="php-keyword2">in_array</span>( <span class="php-var">$name</span>, <span class="php-keyword1">array</span>( <span class="php-quote">'colors'</span>, <span class="php-quote">'color_schemes'</span> ), <span class="php-keyword1">true</span> ) ) {
-</span><span id="1354" class="codeline"><a class="number" href="#1354">1354: </a>
-</span><span id="1355" class="codeline"><a class="number" href="#1355">1355: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
-</span><span id="1356" class="codeline"><a class="number" href="#1356">1356: </a>
-</span><span id="1357" class="codeline"><a class="number" href="#1357">1357: </a>        }
-</span><span id="1358" class="codeline"><a class="number" href="#1358">1358: </a>
-</span><span id="1359" class="codeline"><a class="number" href="#1359">1359: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;<span class="php-var">$name</span>;
-</span><span id="1360" class="codeline"><a class="number" href="#1360">1360: </a>
-</span><span id="1361" class="codeline"><a class="number" href="#1361">1361: </a>    }
-</span><span id="1362" class="codeline"><a class="number" href="#1362">1362: </a>
-</span><span id="1363" class="codeline"><a class="number" href="#1363">1363: </a>}
-</span><span id="1364" class="codeline"><a class="number" href="#1364">1364: </a>
-</span><span id="1365" class="codeline"><a class="number" href="#1365">1365: </a><span class="php-var">$GLOBALS</span>[<span class="php-quote">'primer_customizer_colors'</span>] = <span class="php-keyword1">new</span> Primer_Customizer_Colors;
-</span><span id="1366" class="codeline"><a class="number" href="#1366">1366: </a></span></code></pre>
+</span><span id="1164" class="codeline"><a class="number" href="#1164">1164: </a>                <span class="php-quote">'video'</span>              =&gt; <span class="php-keyword1">true</span>,
+</span><span id="1165" class="codeline"><a class="number" href="#1165">1165: </a>            )
+</span><span id="1166" class="codeline"><a class="number" href="#1166">1166: </a>        );
+</span><span id="1167" class="codeline"><a class="number" href="#1167">1167: </a>
+</span><span id="1168" class="codeline"><a class="number" href="#1168">1168: </a>        add_theme_support( <span class="php-quote">'custom-header'</span>, <span class="php-var">$args</span> );
+</span><span id="1169" class="codeline"><a class="number" href="#1169">1169: </a>
+</span><span id="1170" class="codeline"><a class="number" href="#1170">1170: </a>        <span class="php-comment">/**
+</span></span><span id="1171" class="codeline"><a class="number" href="#1171">1171: </a><span class="php-comment">         * Filter the default hero images.
+</span></span><span id="1172" class="codeline"><a class="number" href="#1172">1172: </a><span class="php-comment">         *
+</span></span><span id="1173" class="codeline"><a class="number" href="#1173">1173: </a><span class="php-comment">         * @var array
+</span></span><span id="1174" class="codeline"><a class="number" href="#1174">1174: </a><span class="php-comment">         */</span>
+</span><span id="1175" class="codeline"><a class="number" href="#1175">1175: </a>        <span class="php-var">$defaults</span> = (<span class="php-keyword1">array</span>) apply_filters( <span class="php-quote">'primer_default_hero_images'</span>,
+</span><span id="1176" class="codeline"><a class="number" href="#1176">1176: </a>            <span class="php-keyword1">array</span>(
+</span><span id="1177" class="codeline"><a class="number" href="#1177">1177: </a>                <span class="php-quote">'default'</span> =&gt; <span class="php-keyword1">array</span>(
+</span><span id="1178" class="codeline"><a class="number" href="#1178">1178: </a>                    <span class="php-quote">'url'</span>           =&gt; <span class="php-quote">'assets/images/hero.jpg'</span>,
+</span><span id="1179" class="codeline"><a class="number" href="#1179">1179: </a>                    <span class="php-quote">'thumbnail_url'</span> =&gt; <span class="php-quote">'assets/images/hero-thumbnail.jpg'</span>,
+</span><span id="1180" class="codeline"><a class="number" href="#1180">1180: </a>                ),
+</span><span id="1181" class="codeline"><a class="number" href="#1181">1181: </a>            )
+</span><span id="1182" class="codeline"><a class="number" href="#1182">1182: </a>        );
+</span><span id="1183" class="codeline"><a class="number" href="#1183">1183: </a>
+</span><span id="1184" class="codeline"><a class="number" href="#1184">1184: </a>        <span class="php-keyword1">foreach</span> ( <span class="php-var">$defaults</span> <span class="php-keyword1">as</span> <span class="php-var">$name</span> =&gt; &amp;<span class="php-var">$args</span> ) {
+</span><span id="1185" class="codeline"><a class="number" href="#1185">1185: </a>
+</span><span id="1186" class="codeline"><a class="number" href="#1186">1186: </a>            <span class="php-var">$path</span> = trailingslashit( get_stylesheet_directory() );
+</span><span id="1187" class="codeline"><a class="number" href="#1187">1187: </a>            <span class="php-var">$url</span>  = trailingslashit( get_stylesheet_directory_uri() );
+</span><span id="1188" class="codeline"><a class="number" href="#1188">1188: </a>
+</span><span id="1189" class="codeline"><a class="number" href="#1189">1189: </a>            <span class="php-keyword1">if</span> ( ! <span class="php-keyword2">file_exists</span>( <span class="php-var">$path</span> . <span class="php-var">$args</span>[<span class="php-quote">'url'</span>] ) ) {
+</span><span id="1190" class="codeline"><a class="number" href="#1190">1190: </a>
+</span><span id="1191" class="codeline"><a class="number" href="#1191">1191: </a>                <span class="php-keyword1">unset</span>( <span class="php-var">$defaults</span>[ <span class="php-var">$name</span> ] );
+</span><span id="1192" class="codeline"><a class="number" href="#1192">1192: </a>
+</span><span id="1193" class="codeline"><a class="number" href="#1193">1193: </a>                <span class="php-keyword1">continue</span>;
+</span><span id="1194" class="codeline"><a class="number" href="#1194">1194: </a>
+</span><span id="1195" class="codeline"><a class="number" href="#1195">1195: </a>            }
+</span><span id="1196" class="codeline"><a class="number" href="#1196">1196: </a>
+</span><span id="1197" class="codeline"><a class="number" href="#1197">1197: </a>            <span class="php-var">$args</span>[<span class="php-quote">'url'</span>]           = <span class="php-var">$url</span> . <span class="php-var">$args</span>[<span class="php-quote">'url'</span>];
+</span><span id="1198" class="codeline"><a class="number" href="#1198">1198: </a>            <span class="php-var">$args</span>[<span class="php-quote">'thumbnail_url'</span>] = <span class="php-keyword2">file_exists</span>( <span class="php-var">$path</span> . <span class="php-var">$args</span>[<span class="php-quote">'thumbnail_url'</span>] ) ? <span class="php-var">$url</span> . <span class="php-var">$args</span>[<span class="php-quote">'thumbnail_url'</span>] : <span class="php-var">$args</span>[<span class="php-quote">'url'</span>];
+</span><span id="1199" class="codeline"><a class="number" href="#1199">1199: </a>
+</span><span id="1200" class="codeline"><a class="number" href="#1200">1200: </a>        }
+</span><span id="1201" class="codeline"><a class="number" href="#1201">1201: </a>
+</span><span id="1202" class="codeline"><a class="number" href="#1202">1202: </a>        <span class="php-keyword1">if</span> ( <span class="php-var">$defaults</span> ) {
+</span><span id="1203" class="codeline"><a class="number" href="#1203">1203: </a>
+</span><span id="1204" class="codeline"><a class="number" href="#1204">1204: </a>            register_default_headers( <span class="php-var">$defaults</span> );
+</span><span id="1205" class="codeline"><a class="number" href="#1205">1205: </a>
+</span><span id="1206" class="codeline"><a class="number" href="#1206">1206: </a>        }
+</span><span id="1207" class="codeline"><a class="number" href="#1207">1207: </a>
+</span><span id="1208" class="codeline"><a class="number" href="#1208">1208: </a>    }
+</span><span id="1209" class="codeline"><a class="number" href="#1209">1209: </a>
+</span><span id="1210" class="codeline"><a class="number" href="#1210">1210: </a>    <span class="php-comment">/**
+</span></span><span id="1211" class="codeline"><a class="number" href="#1211">1211: </a><span class="php-comment">     * Custom header CSS.
+</span></span><span id="1212" class="codeline"><a class="number" href="#1212">1212: </a><span class="php-comment">     *
+</span></span><span id="1213" class="codeline"><a class="number" href="#1213">1213: </a><span class="php-comment">     * @see   $this-&gt;header()
+</span></span><span id="1214" class="codeline"><a class="number" href="#1214">1214: </a><span class="php-comment">     * @since 1.0.0
+</span></span><span id="1215" class="codeline"><a class="number" href="#1215">1215: </a><span class="php-comment">     */</span>
+</span><span id="1216" class="codeline"><a class="number" href="#1216">1216: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> header_css() {
+</span><span id="1217" class="codeline"><a class="number" href="#1217">1217: </a>
+</span><span id="1218" class="codeline"><a class="number" href="#1218">1218: </a>        <span class="php-var">$color</span> = get_header_textcolor();
+</span><span id="1219" class="codeline"><a class="number" href="#1219">1219: </a>        <span class="php-var">$css</span>   = <span class="php-var">$this</span>-&gt;get_color_css( <span class="php-quote">'header_textcolor'</span> );
+</span><span id="1220" class="codeline"><a class="number" href="#1220">1220: </a>
+</span><span id="1221" class="codeline"><a class="number" href="#1221">1221: </a>        <span class="php-keyword1">if</span> ( <span class="php-quote">'blank'</span> === <span class="php-var">$color</span> ) {
+</span><span id="1222" class="codeline"><a class="number" href="#1222">1222: </a>
+</span><span id="1223" class="codeline"><a class="number" href="#1223">1223: </a>            <span class="php-var">$css</span> = <span class="php-keyword1">array</span>(
+</span><span id="1224" class="codeline"><a class="number" href="#1224">1224: </a>                <span class="php-quote">'.site-title, .site-description'</span> =&gt; <span class="php-keyword1">array</span>(
+</span><span id="1225" class="codeline"><a class="number" href="#1225">1225: </a>                    <span class="php-quote">'position'</span> =&gt; <span class="php-quote">'absolute'</span>,
+</span><span id="1226" class="codeline"><a class="number" href="#1226">1226: </a>                    <span class="php-quote">'clip'</span>     =&gt; <span class="php-quote">'rect(1px, 1px, 1px, 1px)'</span>,
+</span><span id="1227" class="codeline"><a class="number" href="#1227">1227: </a>                ),
+</span><span id="1228" class="codeline"><a class="number" href="#1228">1228: </a>            );
+</span><span id="1229" class="codeline"><a class="number" href="#1229">1229: </a>
+</span><span id="1230" class="codeline"><a class="number" href="#1230">1230: </a>        }
+</span><span id="1231" class="codeline"><a class="number" href="#1231">1231: </a>
+</span><span id="1232" class="codeline"><a class="number" href="#1232">1232: </a>        <span class="php-keyword1">if</span> ( <span class="php-var">$color</span> &amp;&amp; <span class="php-var">$css</span> ) {
+</span><span id="1233" class="codeline"><a class="number" href="#1233">1233: </a>
+</span><span id="1234" class="codeline"><a class="number" href="#1234">1234: </a>            <span class="php-keyword2">printf</span>( <span class="php-comment">// xss ok.</span>
+</span><span id="1235" class="codeline"><a class="number" href="#1235">1235: </a>                <span class="php-quote">&quot;&lt;style type='text/css'&gt;\n%s\n&lt;/style&gt;&quot;</span>,
+</span><span id="1236" class="codeline"><a class="number" href="#1236">1236: </a>                <span class="php-keyword2">sprintf</span>( Primer_Customizer::parse_css_rules( <span class="php-var">$css</span> ), <span class="php-var">$color</span> )
+</span><span id="1237" class="codeline"><a class="number" href="#1237">1237: </a>            );
+</span><span id="1238" class="codeline"><a class="number" href="#1238">1238: </a>
+</span><span id="1239" class="codeline"><a class="number" href="#1239">1239: </a>        }
+</span><span id="1240" class="codeline"><a class="number" href="#1240">1240: </a>
+</span><span id="1241" class="codeline"><a class="number" href="#1241">1241: </a>    }
+</span><span id="1242" class="codeline"><a class="number" href="#1242">1242: </a>
+</span><span id="1243" class="codeline"><a class="number" href="#1243">1243: </a>    <span class="php-comment">/**
+</span></span><span id="1244" class="codeline"><a class="number" href="#1244">1244: </a><span class="php-comment">     * Add custom background support.
+</span></span><span id="1245" class="codeline"><a class="number" href="#1245">1245: </a><span class="php-comment">     *
+</span></span><span id="1246" class="codeline"><a class="number" href="#1246">1246: </a><span class="php-comment">     * @action after_setup_theme
+</span></span><span id="1247" class="codeline"><a class="number" href="#1247">1247: </a><span class="php-comment">     * @since  1.0.0
+</span></span><span id="1248" class="codeline"><a class="number" href="#1248">1248: </a><span class="php-comment">     */</span>
+</span><span id="1249" class="codeline"><a class="number" href="#1249">1249: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> background() {
+</span><span id="1250" class="codeline"><a class="number" href="#1250">1250: </a>
+</span><span id="1251" class="codeline"><a class="number" href="#1251">1251: </a>        <span class="php-comment">/**
+</span></span><span id="1252" class="codeline"><a class="number" href="#1252">1252: </a><span class="php-comment">         * Filter the custom background args.
+</span></span><span id="1253" class="codeline"><a class="number" href="#1253">1253: </a><span class="php-comment">         *
+</span></span><span id="1254" class="codeline"><a class="number" href="#1254">1254: </a><span class="php-comment">         * @since 1.0.0
+</span></span><span id="1255" class="codeline"><a class="number" href="#1255">1255: </a><span class="php-comment">         *
+</span></span><span id="1256" class="codeline"><a class="number" href="#1256">1256: </a><span class="php-comment">         * @var array
+</span></span><span id="1257" class="codeline"><a class="number" href="#1257">1257: </a><span class="php-comment">         */</span>
+</span><span id="1258" class="codeline"><a class="number" href="#1258">1258: </a>        <span class="php-var">$args</span> = (<span class="php-keyword1">array</span>) apply_filters( <span class="php-quote">'primer_custom_background_args'</span>,
+</span><span id="1259" class="codeline"><a class="number" href="#1259">1259: </a>            <span class="php-keyword1">array</span>(
+</span><span id="1260" class="codeline"><a class="number" href="#1260">1260: </a>                <span class="php-quote">'default-color'</span> =&gt; <span class="php-var">$this</span>-&gt;get_default_color( <span class="php-quote">'background_color'</span>, <span class="php-quote">'default'</span> ),
+</span><span id="1261" class="codeline"><a class="number" href="#1261">1261: </a>            )
+</span><span id="1262" class="codeline"><a class="number" href="#1262">1262: </a>        );
+</span><span id="1263" class="codeline"><a class="number" href="#1263">1263: </a>
+</span><span id="1264" class="codeline"><a class="number" href="#1264">1264: </a>        add_theme_support( <span class="php-quote">'custom-background'</span>, <span class="php-var">$args</span> );
+</span><span id="1265" class="codeline"><a class="number" href="#1265">1265: </a>
+</span><span id="1266" class="codeline"><a class="number" href="#1266">1266: </a>    }
+</span><span id="1267" class="codeline"><a class="number" href="#1267">1267: </a>
+</span><span id="1268" class="codeline"><a class="number" href="#1268">1268: </a>    <span class="php-comment">/**
+</span></span><span id="1269" class="codeline"><a class="number" href="#1269">1269: </a><span class="php-comment">     * Add setting and control for the hero image color overlay transparency.
+</span></span><span id="1270" class="codeline"><a class="number" href="#1270">1270: </a><span class="php-comment">     *
+</span></span><span id="1271" class="codeline"><a class="number" href="#1271">1271: </a><span class="php-comment">     * @action customize_register
+</span></span><span id="1272" class="codeline"><a class="number" href="#1272">1272: </a><span class="php-comment">     * @see    WP_Customize_Manager
+</span></span><span id="1273" class="codeline"><a class="number" href="#1273">1273: </a><span class="php-comment">     *
+</span></span><span id="1274" class="codeline"><a class="number" href="#1274">1274: </a><span class="php-comment">     * @since  1.0.0
+</span></span><span id="1275" class="codeline"><a class="number" href="#1275">1275: </a><span class="php-comment">     *
+</span></span><span id="1276" class="codeline"><a class="number" href="#1276">1276: </a><span class="php-comment">     * @param WP_Customize_Manager $wp_customize Instance of the WP_Customize_Manager class.
+</span></span><span id="1277" class="codeline"><a class="number" href="#1277">1277: </a><span class="php-comment">     */</span>
+</span><span id="1278" class="codeline"><a class="number" href="#1278">1278: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> color_overlay_transparency( WP_Customize_Manager <span class="php-var">$wp_customize</span> ) {
+</span><span id="1279" class="codeline"><a class="number" href="#1279">1279: </a>
+</span><span id="1280" class="codeline"><a class="number" href="#1280">1280: </a>        <span class="php-var">$wp_customize</span>-&gt;add_setting(
+</span><span id="1281" class="codeline"><a class="number" href="#1281">1281: </a>            <span class="php-quote">'hero_image_color_overlay'</span>,
+</span><span id="1282" class="codeline"><a class="number" href="#1282">1282: </a>            <span class="php-keyword1">array</span>(
+</span><span id="1283" class="codeline"><a class="number" href="#1283">1283: </a>                <span class="php-quote">'default'</span>           =&gt; <span class="php-var">$this</span>-&gt;get_color_overlay_transparency_default_value(),
+</span><span id="1284" class="codeline"><a class="number" href="#1284">1284: </a>                <span class="php-quote">'sanitize_callback'</span> =&gt; <span class="php-quote">'absint'</span>,
+</span><span id="1285" class="codeline"><a class="number" href="#1285">1285: </a>                <span class="php-quote">'transport'</span>         =&gt; <span class="php-quote">'postMessage'</span>,
+</span><span id="1286" class="codeline"><a class="number" href="#1286">1286: </a>            )
+</span><span id="1287" class="codeline"><a class="number" href="#1287">1287: </a>        );
+</span><span id="1288" class="codeline"><a class="number" href="#1288">1288: </a>
+</span><span id="1289" class="codeline"><a class="number" href="#1289">1289: </a>        <span class="php-var">$wp_customize</span>-&gt;add_control(
+</span><span id="1290" class="codeline"><a class="number" href="#1290">1290: </a>            <span class="php-quote">'hero_image_color_overlay'</span>,
+</span><span id="1291" class="codeline"><a class="number" href="#1291">1291: </a>            <span class="php-keyword1">array</span>(
+</span><span id="1292" class="codeline"><a class="number" href="#1292">1292: </a>                <span class="php-quote">'label'</span>           =&gt; esc_html__( <span class="php-quote">'Hero Background Overlay'</span>, <span class="php-quote">'primer'</span> ),
+</span><span id="1293" class="codeline"><a class="number" href="#1293">1293: </a>                <span class="php-quote">'description'</span>     =&gt; esc_html__( <span class="php-quote">'Control the color overlay transparency when using a custom Header Image.'</span>, <span class="php-quote">'primer'</span> ),
+</span><span id="1294" class="codeline"><a class="number" href="#1294">1294: </a>                <span class="php-quote">'section'</span>         =&gt; <span class="php-quote">'colors-header'</span>,
+</span><span id="1295" class="codeline"><a class="number" href="#1295">1295: </a>                <span class="php-quote">'priority'</span>        =&gt; <span class="php-num">20</span>,
+</span><span id="1296" class="codeline"><a class="number" href="#1296">1296: </a>                <span class="php-quote">'active_callback'</span> =&gt; <span class="php-quote">'primer_has_hero_image'</span>,
+</span><span id="1297" class="codeline"><a class="number" href="#1297">1297: </a>                <span class="php-quote">'type'</span>            =&gt; <span class="php-quote">'range'</span>,
+</span><span id="1298" class="codeline"><a class="number" href="#1298">1298: </a>                <span class="php-quote">'input_attrs'</span>     =&gt; <span class="php-keyword1">array</span>(
+</span><span id="1299" class="codeline"><a class="number" href="#1299">1299: </a>                    <span class="php-quote">'min'</span>  =&gt; <span class="php-num">0</span>,
+</span><span id="1300" class="codeline"><a class="number" href="#1300">1300: </a>                    <span class="php-quote">'max'</span>  =&gt; <span class="php-num">100</span>,
+</span><span id="1301" class="codeline"><a class="number" href="#1301">1301: </a>                    <span class="php-quote">'step'</span> =&gt; <span class="php-num">1</span>,
+</span><span id="1302" class="codeline"><a class="number" href="#1302">1302: </a>                ),
+</span><span id="1303" class="codeline"><a class="number" href="#1303">1303: </a>            )
+</span><span id="1304" class="codeline"><a class="number" href="#1304">1304: </a>        );
+</span><span id="1305" class="codeline"><a class="number" href="#1305">1305: </a>
+</span><span id="1306" class="codeline"><a class="number" href="#1306">1306: </a>    }
+</span><span id="1307" class="codeline"><a class="number" href="#1307">1307: </a>
+</span><span id="1308" class="codeline"><a class="number" href="#1308">1308: </a>    <span class="php-comment">/**
+</span></span><span id="1309" class="codeline"><a class="number" href="#1309">1309: </a><span class="php-comment">     * Return the default hero image color overlay transparency value.
+</span></span><span id="1310" class="codeline"><a class="number" href="#1310">1310: </a><span class="php-comment">     *
+</span></span><span id="1311" class="codeline"><a class="number" href="#1311">1311: </a><span class="php-comment">     * @since 1.0.0
+</span></span><span id="1312" class="codeline"><a class="number" href="#1312">1312: </a><span class="php-comment">     *
+</span></span><span id="1313" class="codeline"><a class="number" href="#1313">1313: </a><span class="php-comment">     * @return int Returns the color overlay transparency value.
+</span></span><span id="1314" class="codeline"><a class="number" href="#1314">1314: </a><span class="php-comment">     */</span>
+</span><span id="1315" class="codeline"><a class="number" href="#1315">1315: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> get_color_overlay_transparency_default_value() {
+</span><span id="1316" class="codeline"><a class="number" href="#1316">1316: </a>
+</span><span id="1317" class="codeline"><a class="number" href="#1317">1317: </a>        <span class="php-comment">/**
+</span></span><span id="1318" class="codeline"><a class="number" href="#1318">1318: </a><span class="php-comment">         * Filter the default hero image color overlay transparency value.
+</span></span><span id="1319" class="codeline"><a class="number" href="#1319">1319: </a><span class="php-comment">         *
+</span></span><span id="1320" class="codeline"><a class="number" href="#1320">1320: </a><span class="php-comment">         * @since 1.0.0
+</span></span><span id="1321" class="codeline"><a class="number" href="#1321">1321: </a><span class="php-comment">         *
+</span></span><span id="1322" class="codeline"><a class="number" href="#1322">1322: </a><span class="php-comment">         * @var int
+</span></span><span id="1323" class="codeline"><a class="number" href="#1323">1323: </a><span class="php-comment">         */</span>
+</span><span id="1324" class="codeline"><a class="number" href="#1324">1324: </a>        <span class="php-keyword1">return</span> (int) apply_filters( <span class="php-quote">'primer_hero_image_color_overlay_default'</span>, <span class="php-num">50</span> );
+</span><span id="1325" class="codeline"><a class="number" href="#1325">1325: </a>
+</span><span id="1326" class="codeline"><a class="number" href="#1326">1326: </a>    }
+</span><span id="1327" class="codeline"><a class="number" href="#1327">1327: </a>
+</span><span id="1328" class="codeline"><a class="number" href="#1328">1328: </a>    <span class="php-comment">/**
+</span></span><span id="1329" class="codeline"><a class="number" href="#1329">1329: </a><span class="php-comment">     * Return the hero image color overlay transparency value.
+</span></span><span id="1330" class="codeline"><a class="number" href="#1330">1330: </a><span class="php-comment">     *
+</span></span><span id="1331" class="codeline"><a class="number" href="#1331">1331: </a><span class="php-comment">     * @since 1.0.0
+</span></span><span id="1332" class="codeline"><a class="number" href="#1332">1332: </a><span class="php-comment">     *
+</span></span><span id="1333" class="codeline"><a class="number" href="#1333">1333: </a><span class="php-comment">     * @return string Returns the hero color overlay transparency value.
+</span></span><span id="1334" class="codeline"><a class="number" href="#1334">1334: </a><span class="php-comment">     */</span>
+</span><span id="1335" class="codeline"><a class="number" href="#1335">1335: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> get_color_overlay_transparency_value() {
+</span><span id="1336" class="codeline"><a class="number" href="#1336">1336: </a>
+</span><span id="1337" class="codeline"><a class="number" href="#1337">1337: </a>        <span class="php-var">$default</span> = <span class="php-var">$this</span>-&gt;get_color_overlay_transparency_default_value();
+</span><span id="1338" class="codeline"><a class="number" href="#1338">1338: </a>
+</span><span id="1339" class="codeline"><a class="number" href="#1339">1339: </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">sprintf</span>( <span class="php-quote">'%.2f'</span>, absint( get_theme_mod( <span class="php-quote">'hero_image_color_overlay'</span>, <span class="php-var">$default</span> ) ) * <span class="php-num">0.01</span> );
+</span><span id="1340" class="codeline"><a class="number" href="#1340">1340: </a>
+</span><span id="1341" class="codeline"><a class="number" href="#1341">1341: </a>    }
+</span><span id="1342" class="codeline"><a class="number" href="#1342">1342: </a>
+</span><span id="1343" class="codeline"><a class="number" href="#1343">1343: </a>    <span class="php-comment">/**
+</span></span><span id="1344" class="codeline"><a class="number" href="#1344">1344: </a><span class="php-comment">     * Magic getter for `$colors` and `$color_schemes` properties.
+</span></span><span id="1345" class="codeline"><a class="number" href="#1345">1345: </a><span class="php-comment">     *
+</span></span><span id="1346" class="codeline"><a class="number" href="#1346">1346: </a><span class="php-comment">     * @since  1.0.0
+</span></span><span id="1347" class="codeline"><a class="number" href="#1347">1347: </a><span class="php-comment">     *
+</span></span><span id="1348" class="codeline"><a class="number" href="#1348">1348: </a><span class="php-comment">     * @param  string $name Color key or color scheme slug name.
+</span></span><span id="1349" class="codeline"><a class="number" href="#1349">1349: </a><span class="php-comment">     *
+</span></span><span id="1350" class="codeline"><a class="number" href="#1350">1350: </a><span class="php-comment">     * @return string Return the specified property within the `Primer_Customizer_Colors` class.
+</span></span><span id="1351" class="codeline"><a class="number" href="#1351">1351: </a><span class="php-comment">     */</span>
+</span><span id="1352" class="codeline"><a class="number" href="#1352">1352: </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __get( <span class="php-var">$name</span> ) {
+</span><span id="1353" class="codeline"><a class="number" href="#1353">1353: </a>
+</span><span id="1354" class="codeline"><a class="number" href="#1354">1354: </a>        <span class="php-keyword1">if</span> ( ! <span class="php-keyword2">in_array</span>( <span class="php-var">$name</span>, <span class="php-keyword1">array</span>( <span class="php-quote">'colors'</span>, <span class="php-quote">'color_schemes'</span> ), <span class="php-keyword1">true</span> ) ) {
+</span><span id="1355" class="codeline"><a class="number" href="#1355">1355: </a>
+</span><span id="1356" class="codeline"><a class="number" href="#1356">1356: </a>            <span class="php-keyword1">return</span> <span class="php-keyword1">false</span>;
+</span><span id="1357" class="codeline"><a class="number" href="#1357">1357: </a>
+</span><span id="1358" class="codeline"><a class="number" href="#1358">1358: </a>        }
+</span><span id="1359" class="codeline"><a class="number" href="#1359">1359: </a>
+</span><span id="1360" class="codeline"><a class="number" href="#1360">1360: </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;<span class="php-var">$name</span>;
+</span><span id="1361" class="codeline"><a class="number" href="#1361">1361: </a>
+</span><span id="1362" class="codeline"><a class="number" href="#1362">1362: </a>    }
+</span><span id="1363" class="codeline"><a class="number" href="#1363">1363: </a>
+</span><span id="1364" class="codeline"><a class="number" href="#1364">1364: </a>}
+</span><span id="1365" class="codeline"><a class="number" href="#1365">1365: </a>
+</span><span id="1366" class="codeline"><a class="number" href="#1366">1366: </a><span class="php-var">$GLOBALS</span>[<span class="php-quote">'primer_customizer_colors'</span>] = <span class="php-keyword1">new</span> Primer_Customizer_Colors;
+</span><span id="1367" class="codeline"><a class="number" href="#1367">1367: </a></span></code></pre>
 			</div>
 		</div>
 
